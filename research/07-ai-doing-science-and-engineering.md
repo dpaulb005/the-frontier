@@ -12,7 +12,7 @@
 
 3. **Formal verification is the load-bearing infrastructure.** Lean/AlphaProof-style pipelines convert "an LLM says it proved this" into a machine-checkable object. Where formalization exists, AI math claims have held up; where it doesn't, they have repeatedly deflated. **CONFIRMED**
 
-4. **Terence Tao has become the de facto standards body.** His ICM 2026 essay ("Mathematics in the age of AI") reframes the debate from capability to *what mathematics is for*, and proposes concrete norms: disclosure of tool use, and authors must be able to give an expert talk on their own AI-assisted result. **CONFIRMED**
+4. **Terence Tao has become the de facto standards body.** His ICM 2026 essay ("Mathematics in the age of AI," 24 Aug 2026) reframes the debate from capability to *what mathematics is for*, lays out a six-stage pipeline in which AI touches only the first stage, and endorses the June 2026 **Leiden Declaration**: mandatory tool disclosure, human credit and responsibility, and — the sharpest test — if authors cannot give a clear expert-level talk on their own result, it should not be published. **CONFIRMED**
 
 5. **AlphaEvolve is the most economically legible science-AI system.** It found a 48-multiplication scheme for 4×4 complex matrices (first improvement on Strassen in that setting in 56 years), recovered real datacenter compute at Google, and in August 2026 was part of the pipeline that pushed ω below 2.371177. **CONFIRMED**
 
@@ -22,7 +22,7 @@
 
 8. **A fully AI-generated paper passed human peer review — at a workshop.** Sakana's AI Scientist-v2 result was published in Nature in March 2026. As of mid-2026 no AI-solo-authored paper had cleared a main-track journal or conference. The gap between those two facts is the whole story. **CONFIRMED**
 
-9. **The AI-accelerating-AI loop is now measured, not just asserted.** METR's time horizons show post-2024 doubling near ~3 months (89 days) with the best models at ~16–20 hours on the 50% horizon; OpenAI declared its "automated research intern" milestone on 2026-09-06 and reports 3.1 agent-workdays per human workday internally, targeting a "legitimate AI researcher" by March 2028. **CONFIRMED (announcements) / REPORTED (internal metrics)**
+9. **The AI-accelerating-AI loop is now measured, not just asserted.** METR's Time Horizon 1.1 (Jan 2026) puts the post-2024 doubling at **88.6 days** with Claude Opus 4.5 at a 320-minute 50% horizon; OpenAI declared its "automated research intern" milestone on 2026-09-06/07 and reports **3.1 agent-workdays per eight hours of human labor**, targeting a "legitimate AI researcher" by March 2028. **CONFIRMED (announcements) / REPORTED (internal metrics)**
 
 10. **The binding constraint has moved from cognition to the physical world.** Nothing in the 2026 record shows AI short-circuiting synthesis, characterization, animal models, or clinical trials. The systems that look fastest are exactly the ones whose verification loop is symbolic (math, code, kernels) rather than material. **ANALYSIS**
 
@@ -59,16 +59,19 @@ The structure underneath matters more than the headline:
 - A **June 12, 2026** v2 release corrected errors in **42%** of problems, leaving 338 problems. Benchmark error rates at this level are a standing warning about all AI-science benchmark claims [10]. **CONFIRMED**
 - **Tier 4** (the hardest tier) leads below **40%**, with most models in single digits [10]. **CONFIRMED**
 - On **July 31, 2026**, Epoch launched **FrontierMath: Open Problems** — 50 genuinely unsolved research problems. **AI has solved three** [10]. **CONFIRMED**
+- FrontierMath now ships as three components: Tiers 1–4, Open Problems, and **FrontierMath Erdős** — a curated set of Erdős problems **formalized in Lean** [10]. That third component is the tell: Epoch built a formally verifiable Erdős benchmark specifically because the informal version had already produced a false-positive scandal. **CONFIRMED (existence) / ANALYSIS (motive)**
 
 That last number is the most informative single statistic in AI-for-math right now: 3/50 on real open problems, against ~88% on hard-but-solved problems. **ANALYSIS**
 
 ### Tao's framework
 
-Tao's ICM 2026 lecture and accompanying essay, *Mathematics in the age of AI* (arXiv 2608.16753, August 2026), deliberately sidesteps capability forecasting [12][13]. His argument: problem-solving is one stage of five — proof generation, **verification, exposition, publication, and canonicalization** — and AI is currently strong at the first and weak-to-absent at the rest.
+Tao's ICM 2026 lecture and accompanying essay, *Mathematics in the age of AI* (arXiv 2608.16753, submitted 17 Aug 2026, revised 24 Aug 2026), deliberately sidesteps capability forecasting [12][13]. He is explicit about why the public debate is unreliable: it lacks controlled conditions, "successes are announced and failures are not," and key variables (compute, number of attempts, human scaffolding) usually go undisclosed. **CONFIRMED**
 
-His proposed norms are concrete and are being adopted piecemeal by journals and conferences: **mandatory disclosure of tool use**, and **authors must be able to give a clear expert-level talk on their own AI-assisted result** or the work should not be published [12]. **CONFIRMED**
+His structural argument: problem-solving is **one stage of six** — (1) proof generation, (2) proof **verification**, (3) **exposition**, (4) **publication**, (5) **digestion** (integration into the working knowledge of a field), and (6) **canonicalization** (incorporation into definitive theory). AI is strong at stage 1, increasingly credible at stage 2 where proof assistants (Lean, Rocq, HOL) are available, and essentially absent from stages 3–6, which are the stages that actually determine whether mathematics accumulates [12]. **CONFIRMED**
 
-Related: **First Proof**, an independent assessment running batches of ten novel research-level problems against frontier harnesses. In the second batch (tested 2026-05-28), **7 of 10** problems were solved at publication-level quality by at least one team, at **$10–$1,000 of compute per problem** [12]. **REPORTED** — and note the cost figure, which is the number that makes this an economic story rather than a curiosity.
+On norms, Tao endorses the **Leiden Declaration** (2 June 2026): a mandatory "tool and computational resource disclosure" section; credit and responsibility remaining with humans; and the operational test — *"If the authors cannot convincingly demonstrate that they are able to give a clear, expert-level talk on their results… the result should not be published"* [12]. **CONFIRMED**
+
+Related: **First Proof**, an independent assessment running batches of ten novel research-level problems against frontier harnesses, refereed by experts for correctness *and quality*. In the second batch (evaluated 2026-05-28), **7 of 10** problems received passing grades from at least one system, at **tens to hundreds of dollars of compute per problem** [12]. **REPORTED** — the cost figure is what makes this an economic story rather than a curiosity. Tao also notes the Erdős problems database now holds **dozens** of AI-generated proof submissions [12]. **CONFIRMED**
 
 ---
 
@@ -81,9 +84,9 @@ AlphaEvolve — an evolutionary coding agent wrapping Gemini, published as arXiv
 Confirmed results:
 - A procedure multiplying two **4×4 complex matrices in 48 scalar multiplications**, the first improvement over Strassen's approach in that setting in **56 years** [14][15]. **CONFIRMED**
 - Recovery of on the order of **0.7% of Google's global datacenter compute** through a discovered scheduling heuristic, plus TPU circuit and kernel improvements — i.e., value realized in production, not in a benchmark [16]. **REPORTED**
-- **August 17, 2026:** a paper establishing **ω < 2.371177**, improving the prior bound of 2.371339, with AlphaEvolve used as the final refinement step in a larger optimization pipeline. Authors include DeepMind researchers alongside Josh Alman and Virginia Vassilevska Williams, who held the previous record [17]. **CONFIRMED**
+- **August 17, 2026:** a paper establishing **ω < 2.371177**, improving the prior bound of 2.371339 by 1.62 × 10⁻⁴. The core move was reformulating the laser method's combination-loss analysis for gradient-based optimization, scaling from ~**25,000 parameters** (recursion level 3) to ~**7 million** (recursion level 4). AlphaEvolve's role was narrow and specific: it **modified the optimization code itself** — parameter initialization, learning-rate schedules, objective weighting — with improved variants becoming parents for the next iteration. Authors include DeepMind researchers alongside Josh Alman and Virginia Vassilevska Williams, who held the previous record [17]. **CONFIRMED**
 
-The ω improvement is worth reading carefully: the delta is ~0.000162 and has no practical consequence. Its significance is sociological — the human record-holders co-authored with the machine, and the machine's contribution was a *refinement step inside a human-designed pipeline*, not an end-to-end discovery. **ANALYSIS**
+The ω improvement is worth reading carefully: the delta has no practical consequence, and the authors say so. Its significance is sociological and methodological — the human record-holders co-authored with the machine, and the machine's contribution was **meta-optimization of a human-designed pipeline's hyperparameters and code**, not an end-to-end discovery. This is the most honest picture available of what "AI does mathematics" means in 2026. **ANALYSIS**
 
 ### AI-written GPU kernels
 
@@ -129,19 +132,22 @@ The ratio to hold in mind: **~10⁵–10⁶ computationally predicted materials 
 
 - **Periodic Labs** — founded 2025 by Liam Fedus (ex-OpenAI VP of research, ChatGPT co-creator) and Ekin Doğuş Çubuk (led GNoME's materials work). **$300M seed** led by a16z in Sept 2025; reported in talks in 2026 at a **$7B+ valuation**. North star: a high-temperature superconductor, via AI scientists coupled to autonomous labs [29][30]. **CONFIRMED (funding) / REPORTED (valuation talks).** No published experimental discovery as of this writing. **CONFIRMED (absence)**
 - **Lila Sciences** — "AI Science Factories," robotic labs running continuous AI-directed experiments; No. 25 on CNBC's 2026 Disruptor 50; reports early proof of concept in novel antibodies and carbon-capture materials [31]. **REPORTED**
-- **FutureHouse / Edison Scientific** — **Robin**, a multi-agent system, autonomously generated hypotheses, designed experiments, analyzed data and identified **ripasudil** (an existing glaucoma drug) as a candidate therapy for **dry age-related macular degeneration**; concept-to-paper in **2.5 months**, published in **Nature, May 19, 2026** [32][33]. **CONFIRMED.** **Kosmos** claims six months of research per day, reading 1,500+ papers and running 42,000 lines of analysis code per run, with **~80% of findings accurate by internal evaluation**; seven claimed discoveries with academic beta testers, three replicating unpublished/recent human findings and four novel (including a genetic mechanism possibly reducing type 2 diabetes risk, and a SOD2–cardiac-fibrosis link) [34]. **REPORTED**
-- **Google Co-Scientist** — Gemini-based multi-agent system, graduated from demo to a **Nature** publication in 2026. Validated instances: a drug-repurposing candidate for liver fibrosis that blocked **91%** of a scarring-linked response in lab tests (Gary Peltz, Stanford); a novel integrated-stress-response hypothesis later confirmed in the lab at Calico; antimicrobial resistance and plant immunity work [35][36][37]. **CONFIRMED (publication) / REPORTED (individual results).** Explicitly **lab-validated, not clinic-validated** [37].
+- **FutureHouse / Edison Scientific** — **Robin** orchestrates three specialized agents (**Crow** for literature search, **Falcon** for molecular evaluation and candidate selection, **Finch** for data analysis). It hypothesized that enhancing retinal-pigment-epithelium phagocytosis could treat **dry age-related macular degeneration**, then identified **ripasudil** — a Rho-kinase inhibitor already approved for glaucoma — as the agent to do it, possibly via circadian modulation. Concept to paper in **2.5 months** with a small team; published in **Nature, May 19, 2026** [32][33]. **CONFIRMED.** The division of labor is the point and FutureHouse states it plainly: **all hypotheses, experiment choices, data analyses, and main-text figures were generated by Robin; human researchers executed the physical experiments** [32]. **CONFIRMED** **Kosmos** claims six months of research per day, reading 1,500+ papers and running 42,000 lines of analysis code per run, with **~80% of findings accurate by internal evaluation**; seven claimed discoveries with academic beta testers, three replicating unpublished/recent human findings and four novel (including a genetic mechanism possibly reducing type 2 diabetes risk, and a SOD2–cardiac-fibrosis link) [34]. **REPORTED**
+- **Google Co-Scientist** — a Gemini-based coalition of **seven** specialized agents (generation, proximity, reflection, ranking, evolution, meta-review, supervisor) running Generate → Debate → Evolve cycles; published in **Nature, May 19, 2026** [35]. Validated instances: a drug-repurposing candidate for **liver fibrosis** that blocked **91%** of a scarring-linked response in lab tests (Gary Peltz, Stanford; published in *Advanced Science*); **antimicrobial resistance** work published in *Cell*; **plant immunity**; and a novel integrated-stress-response hypothesis at **Calico** later confirmed experimentally [35][36]. **CONFIRMED (publications) / REPORTED (individual results).** DeepMind's own framing is defensive and correct: "a partner in research, not a replacement for scientific or clinical expertise" — **lab-validated, not clinic-validated** [35][37].
 
 ---
 
 ## 4. AI-generated papers and peer review
 
-Sakana AI's **AI Scientist** (Aug 2024) and **AI Scientist-v2** (2025) run the full loop: idea generation, code, experiments, plots, manuscript, and self-review. A v2-generated paper became the **first fully AI-generated paper to pass human peer review**, and the work was published in **Nature on March 25, 2026** [38][39][40]. **CONFIRMED**
+Sakana AI's **AI Scientist** (Aug 2024) and **AI Scientist-v2** (2025) run the full loop: idea generation, code, experiments, plots, manuscript, and self-review. A v2-generated paper became the **first fully AI-generated paper to pass human peer review**, and the consolidated work — with Sakana AI, UBC, the Vector Institute and Oxford — was published in **Nature on March 26, 2026** [38][39][40]. **CONFIRMED**
 
-Three qualifications that the coverage usually buries:
-1. The accepted paper was at a **workshop track**, not a main conference or journal [38][41]. **CONFIRMED**
-2. As of April 2026, **no AI-solo-authored paper had been published in a major peer-reviewed journal** [41]. **CONFIRMED**
-3. Independent evaluations of the AI Scientist have been mixed, finding the generated work often technically valid but low-novelty [42]. **CONFIRMED**
+The specifics of the peer-review milestone matter more than the headline [39]:
+1. Venue: the **ICLR 2025 "I Can't Believe It's Not Better" (ICBINB) workshop** — a workshop track explicitly about negative and surprising results, not a main conference or journal. **CONFIRMED**
+2. Reviewer scores: **6.33 average (6, 7, 6)** — higher than **55%** of human-authored submissions at that venue. **CONFIRMED**
+3. The authors obtained prior permission from organizers and had **pre-committed to withdrawing the paper if accepted**, which they did. The paper was never actually published as science. **CONFIRMED**
+4. As of April 2026, **no AI-solo-authored paper had been published in a major peer-reviewed journal** [41]. **CONFIRMED**
+
+Sakana's own acknowledged limitations are unusually candid: the system "occasionally produces naive or underdeveloped ideas," struggles with deep methodological rigor and complex code, remains susceptible to hallucination including **inaccurate citations**, and is confined to computational experiments [39]. Independent evaluation has been mixed, finding the output often technically valid but low-novelty [42]. **CONFIRMED**
 
 The 2026 arXiv literature has since filled with successors — ScientistOne, PaperOrchestra, ResearchEVO — which is itself the signal: automated paper generation is now a crowded engineering subfield, and journals' review capacity is the constraint being tested. **ANALYSIS**
 
@@ -165,27 +171,34 @@ Note the shape of the claim here: AI is doing **control and scenario optimizatio
 
 **METR time horizons** — the length of task (measured in human-expert time) a model completes with 50% reliability — is the most-cited quantitative handle on the loop [49][50]:
 
-- Under the revised **Time Horizon 1.1** methodology (Jan 2026), the post-2023 doubling time is **131 days**, vs. 165 days under TH1 — i.e., ~20% faster than previously estimated. **CONFIRMED**
-- All-time doubling: **188 days**. From 2023: **129 days**. From 2024: **89 days (~3 months)** [50]. **CONFIRMED**
-- The strongest assessed agents in 2026 are **at or beyond the reliable measurement range** of TH1.1, with the most capable shared model estimated near **16–20 hours at 50%** and **3–4 hours at 80%** [49]. **REPORTED**
+- **Time Horizon 1.1** (published 2026-01-29) expanded the suite from **170 to 228 tasks** (73 added, 15 removed, 53 modified), doubled the 8-hour-plus task count from **14 to 31**, and migrated from Vivaria to Inspect [49]. **CONFIRMED**
+- Doubling times under TH1.1: **all-time 196.5 days (~7 months)**; **since 2023: 130.8 days** [CI 107–161]; **since 2024: 88.6 days (~3 months)** [49]. Progress under TH1.1 reads ~20% faster than under TH1. **CONFIRMED**
+- 50% time horizons: **Claude Opus 4.5 — 320 minutes** [170–729]; **GPT-5 — 214 minutes** [117–480]; **o3 — 121 minutes** [74–201] [49]. **CONFIRMED**
+- Later in 2026, the strongest assessed agents were reported at or beyond TH1.1's reliable measurement range, with the most capable shared model estimated near **16–20 hours at 50%** and **3–4 hours at 80%** [50]. **REPORTED** — treat with caution; it is a different, later measurement than the TH1.1 table.
 
-METR itself published a note (2026-01-22) on the metric's limitations [51] — the tasks are software/research-engineering tasks with clean scoring, and the extrapolation to open-ended research is not warranted by the data. **CONFIRMED**
+METR is unusually forthright about the caveats, both in TH1.1 itself and in a dedicated note (2026-01-22) [51]: confidence intervals are **very wide**; only **5 of 31** long tasks have measured human baselines with the rest estimated; task composition materially moves the trend; and the suite is software/research-engineering tasks with clean scoring, so extrapolation to open-ended research is **not warranted by the data**. **CONFIRMED**
 
 ### OpenAI's declared milestones
 
 On **2026-09-06**, OpenAI announced it had met the goal Sam Altman set in October 2025: an **"automated research intern" by September 2026** [52][53][54]. Definitions matter enormously:
 
-- OpenAI defines it narrowly: a **supervised** system completing **well-defined** research tasks that would take a skilled researcher **a few days** [52][55]. **CONFIRMED**
-- Reported internal metric: **3.1 agent-workdays of effort per workday of human labor** across the research org [53][56]. **REPORTED**
+- OpenAI defines it narrowly: a **supervised** system completing **well-defined** research tasks under human direction, of the kind that would take a skilled researcher **several days** [52][55]. **CONFIRMED**
+- Reported internal metric: **3.1 agent-workdays of effort per eight hours of human labor** across the research org — and, tellingly, **as recently as June 2026 agent effort was still below total human labor contribution** [53][55][56]. **REPORTED**
 - Next target: a **"legitimate AI researcher" by March 2028** [52][54]. **CONFIRMED (as a stated target)**
 
 What it is explicitly *not*: an autonomous scientist, an unsupervised research program, or a system that chooses its own research priorities [55]. **CONFIRMED**
 
+Reported alongside the milestone, and much less widely covered: OpenAI stated it **does not know how to achieve full recursive self-improvement safely** and that development should be gated on maintaining human control; it **temporarily paused reinforcement-learning work** following a security incident involving Hugging Face; and after discovering advanced cyber capabilities in an internal model ("Astra"), **GPU allocation to it was cut by roughly 59%**. The company also flags compute availability and hard-to-automate tasks as constraints on the 2028 target [55]. **REPORTED (single outlet — treat as unconfirmed until corroborated)**
+
+The interesting thing about the 3.1× number is that it is a *labor-input* ratio, not an output ratio. It says the research org now spends 3.1 agent-days of effort per human day. It does not say the org produces 3.1× the research. Between June 2026 (agents below human contribution) and September 2026 (3.1×), the ratio more than tripled — which is either the steepest productivity curve in the history of industrial R&D, or evidence that the denominator and numerator are not measuring the same thing. **ANALYSIS**
+
 ### The rest of the field
 
-Anthropic has said publicly that a large and growing majority of the code in Claude Code is written by Claude, and frames internal model-assisted engineering as a primary driver of its own velocity. **REPORTED**
+Anthropic has repeatedly stated that a large and growing majority of the code in Claude Code is written by Claude, and frames internal model-assisted engineering as a primary driver of its own velocity. **REPORTED — I was unable to verify a current 2026 figure from an Anthropic primary source within this research budget; treat any specific percentage you see quoted as unsourced.**
 
-Forecasting artifacts: **AI 2027** (Kokotajlo et al.) sits at the aggressive end, with a superhuman-coder-then-fast-takeoff structure; the AI 2027 tracker now benchmarks its predictions against reality, including the METR doubling series [57]. Critiques from Epoch AI and others focus on: compute-scaling limits, the gap between benchmark tasks and real research, and the absence of a mechanism by which cognitive speedup translates into physical-world speedup. **ANALYSIS**
+Forecasting artifacts: **AI 2027** (Kokotajlo et al.) sits at the aggressive end, with a superhuman-coder-then-fast-takeoff structure. The AI 2027 tracker now scores its predictions against reality, including the METR doubling series — where AI 2027 assumed roughly **4-month** doubling and METR's post-2024 fit came in at **~3 months**, i.e. the aggressive forecast's *most checkable* variable has so far run slightly ahead of schedule [57]. **REPORTED.** Critiques from Epoch AI, Forethought and others focus on three things: compute-scaling and power/fab limits; the gap between METR-style benchmark tasks and open-ended research; and the absence of a demonstrated mechanism by which cognitive speedup converts into physical-world speedup. **ANALYSIS**
+
+The honest scorecard: the *inputs* to the loop (time horizons, agent-hours, coding autonomy) are tracking the fast forecasts. The *outputs* (novel research directions, physical-world results, end-to-end timelines) are tracking the slow ones. Both camps can currently cite real evidence, which is why the disagreement has not resolved. **ANALYSIS**
 
 ---
 
@@ -220,18 +233,20 @@ Forecasting artifacts: **AI 2027** (Kokotajlo et al.) sits at the aggressive end
 | FrontierMath v2 — problems with corrected errors | 42% (338 problems remain) | 2026-06-12 | CONFIRMED |
 | FrontierMath Tier 4 — leading score | <40% | 2026 | CONFIRMED |
 | FrontierMath Open Problems — solved by AI | 3 of 50 | since 2026-07-31 | CONFIRMED |
-| First Proof batch 2 — publication-quality solutions | 7 of 10 problems | 2026-05-28 | REPORTED |
-| First Proof — compute cost per problem | $10–$1,000 | 2026-05-28 | REPORTED |
+| First Proof batch 2 — passing grades from ≥1 system | 7 of 10 problems | 2026-05-28 | REPORTED |
+| First Proof — compute cost per problem | tens to hundreds of USD | 2026-05-28 | REPORTED |
 | AlphaEvolve — 4×4 complex matrix multiply | 48 scalar multiplications (1st gain in 56 yrs) | 2025 | CONFIRMED |
 | Matrix multiplication exponent ω | < 2.371177 (from 2.371339) | 2026-08-17 | CONFIRMED |
 | AlphaEvolve — Google datacenter compute recovered | ~0.7% | 2025 | REPORTED |
 | Erdős problems — solved by DeepMind Lean pipeline | 9 (one batch) | 2026-05-21 | REPORTED |
 | GPT-5.4 Pro — Erdős conjecture solve time | ~80 min from one prompt | May 2026 | REPORTED |
-| METR 50% time horizon — best model | ~16–20 hours | 2026 | REPORTED |
-| METR 80% time horizon — best model | ~3–4 hours | 2026 | REPORTED |
-| METR doubling time — from 2024 | 89 days (~3 months) | 2026-01-29 | CONFIRMED |
-| METR doubling time — from 2023 (TH1.1) | 131 days | 2026-01-29 | CONFIRMED |
-| OpenAI — agent-workdays per human workday | 3.1 | 2026-09-06 | REPORTED |
+| METR TH1.1 — 50% horizon, Claude Opus 4.5 | 320 min [170–729] | 2026-01-29 | CONFIRMED |
+| METR TH1.1 — 50% horizon, GPT-5 / o3 | 214 min / 121 min | 2026-01-29 | CONFIRMED |
+| METR 50% / 80% horizon — strongest mid-2026 agents | ~16–20 h / ~3–4 h | mid-2026 | REPORTED |
+| METR doubling time — all-time / since 2023 / since 2024 | 196.5 d / 130.8 d / 88.6 d | 2026-01-29 | CONFIRMED |
+| METR TH1.1 task suite size | 228 tasks (from 170); 31 tasks ≥8 h | 2026-01-29 | CONFIRMED |
+| OpenAI — agent-workdays per 8 h human labor | 3.1 (was <1× in June 2026) | 2026-09-06/07 | REPORTED |
+| Sakana AI Scientist-v2 — ICLR ICBINB workshop score | 6.33 avg; >55% of human papers; withdrawn | 2025 | CONFIRMED |
 | OpenAI — "legitimate AI researcher" target | March 2028 | stated 2025-10 | CONFIRMED (target) |
 | GNoME — stable materials identified | 381,000 (→520,000+ near-hull) | 2023–2024 | CONFIRMED |
 | MatterGen — training structures / experimental validations | 600,000+ DFT / 1 material (TaCr₂O₆) | 2025 | CONFIRMED |
@@ -303,3 +318,13 @@ Forecasting artifacts: **AI 2027** (Kokotajlo et al.) sits at the aggressive end
 55. Help Net Security — "OpenAI just hit a milestone on the road to self-improving AI" — https://www.helpnetsecurity.com/2026/09/07/openai-research-automation-intern/ (2026-09-07)
 56. ChatGPT AI Hub — "OpenAI Reaches the Automated Research Intern Milestone: What 3.1 Agent Workdays per Human Workday Mean" — https://chatgptaihub.com/openai-automated-research-intern-codex-agent-workdays-human-intervention (2026-09)
 57. AI 2027 Tracker — "METR time horizon doubles every 4 months" — https://ai2027-tracker.com/predictions/metr-doubling/ (2026)
+58. Epoch AI — AI Capabilities and Benchmarking Hub (FrontierMath Tiers 1–4, Open Problems, FrontierMath Erdős) — https://epoch.ai/benchmarks (accessed 2026-09-07)
+59. Epoch AI — FrontierMath Tier 4 (v2) — https://epoch.ai/benchmarks/frontiermath-tier-4-v2 (accessed 2026-09-07)
+60. Nature — "Magnetic control of tokamak plasmas through deep reinforcement learning" / DeepMind–EPFL Swiss Plasma Center collaboration — see [43]
+61. Unite.ai — "OpenAI Hits Goal of Building an 'Automated Research Intern'" — https://www.unite.ai/openai-hits-goal-of-building-an-automated-research-intern/ (2026-09)
+62. Forbes — "Former OpenAI Researcher To Raise $500 Million For AI Science Startup" — https://www.forbes.com/sites/iainmartin/2026/05/07/former-openai-researcher-to-raise-500-million-for-ai-science-startup/ (2026-05-07)
+63. Labcritics — "Google DeepMind's Co-Scientist Graduates from Research Demo to Nature Paper" — https://labcritics.com/blog/2026/05/21/google-deepminds-co-scientist-graduates-from-research-demo-to-nature-paper/ (2026-05-21)
+
+### Research gaps in this report
+
+Web-search budget was exhausted mid-project; the following were verified only via secondary sources or not at all, and should be re-checked against primaries: (a) Anthropic's current internal figure for Claude-written code; (b) the specific IMO 2026 outcome, as distinct from IMO 2025; (c) OpenAI's own blog text for the September 2026 milestone (all details here come from secondary coverage); (d) Epoch's per-tier FrontierMath scores and the identity of the models that solved 3 of 50 Open Problems; (e) Periodic Labs' and Lila's experimental results, for which no peer-reviewed output was located; (f) AlphaChip's 2026 status and the replication disputes around it; (g) Epoch AI and Forethought's specific published critiques of AI 2027.

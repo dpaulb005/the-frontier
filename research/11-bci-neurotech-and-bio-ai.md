@@ -23,9 +23,11 @@
 
 ### Neuralink
 
-**REPORTED:** Neuralink has reached roughly 26 implanted participants across its trials as of mid-2026, up from about a dozen at the start of the year [4]. The company closed a $650M round at a ~$9B valuation [1][3].
+**REPORTED:** Neuralink had implanted **26 participants as of June 2026**, up from 21 in January 2026 [4]. Trials now run in the US, Canada, the UK, and the UAE; the GB-PRIME arm had seven participants enrolled as of May 2026 [4]. The company closed a $650M round at a ~$9B valuation [1][3].
 
-**CONFIRMED:** The core PRIME/CONVOY studies target cursor and robotic-arm control in people with severe paralysis. **REPORTED:** Neuralink's speech program (decoding intended phonemes and resynthesizing the user's pre-injury voice) received FDA Breakthrough Device Designation in May 2025 [8].
+**CONFIRMED:** The N1 Link is ~23 mm across and carries up to 3,072 electrodes on 64 threads. The PRIME/CONVOY studies target cursor and robotic-arm control in people with quadriplegia from spinal cord injury or ALS. **REPORTED:** The **VOICE** trial decodes attempted speech — phonemes assembled into words and resynthesized in the participant's pre-injury voice. Both the speech-restoration program (May 2025) and Blindsight (2024) hold FDA Breakthrough Device Designation [4][8].
+
+**REPORTED:** Musk has said Neuralink intends to move to high-volume implant production and a more automated surgical procedure during 2026 [4]. **SPECULATION:** Treat throughput claims skeptically — the constraint on implant count so far has been surgical scheduling and trial-site capacity, not device supply.
 
 **REPORTED:** Blindsight — a visual-cortex stimulating implant intended to give low-resolution vision to people who have lost both eyes and optic nerve function — is targeted for first-in-human in 2026, with an international arm involving Cleveland Clinic Abu Dhabi [1][5].
 
@@ -33,13 +35,15 @@
 
 ### Synchron
 
-**CONFIRMED/REPORTED:** Synchron's endovascular Stentrode is delivered through the jugular vein — no craniotomy — and it holds the first FDA IDE for a permanently implanted BCI (the COMMAND study). It raised a ~$200M Series D in late 2025 and is moving into a pivotal trial in 2026, the study that would support a PMA [7][9].
+**CONFIRMED/REPORTED:** Synchron's endovascular Stentrode is delivered through the jugular vein — no craniotomy — and it holds the first FDA IDE for a permanently implanted BCI. The **COMMAND** feasibility study completed with **six participants, zero serious adverse events and full deployment success** [7]. Synchron raised a ~$200M Series D in November 2025 and is enrolling a central **pivotal trial in 2026**, the study that would support the first PMA for a permanently implanted communication BCI [7][9].
 
-**SPECULATION:** Synchron's lower bandwidth is a real ceiling for speech, but its surgical profile is the reason it is likely to be first to market. Being first to an FDA-approved implantable BCI matters more for reimbursement precedent than for capability.
+**CONFIRMED:** Synchron's own materials still describe the Stentrode as investigational, stating clinical benefit has not been validated and that it is not approved for commercial use in any geography [42]. Roughly ten patients have been implanted across the Australian SWITCH and US COMMAND studies.
+
+**SPECULATION:** Synchron's lower channel count is a real ceiling for speech decoding, but its surgical profile — a catheter procedure any interventional neuroradiologist can perform — is why it is likeliest to be first to market. Being first to an FDA-approved implantable BCI matters more for setting reimbursement precedent than for capability, and Synchron's public work with NVIDIA (foundation models for neural data) and Apple (a native BCI input protocol announced in 2025) is a bet that the ecosystem, not the electrode, is the moat.
 
 ### Precision Neuroscience
 
-**CONFIRMED:** Precision's Layer 7 Cortical Interface — a thin-film surface array that sits on the cortex without penetrating it — received 510(k) clearance in April 2025 for temporary (≤30 day) intraoperative use [7].
+**CONFIRMED:** Precision's **Layer 7 Cortical Interface** — a 1,024-electrode thin film placed on the cortex through a slit craniotomy, without penetrating tissue — received 510(k) clearance in **April 2025** for temporary (≤30 day) recording [7]. Its chronic implant remains in feasibility.
 
 **REPORTED:** In January 2026 Precision announced a partnership with Medtronic to integrate Layer 7 with the StealthStation surgical navigation platform [7].
 
@@ -47,7 +51,9 @@
 
 ### Paradromics
 
-**CONFIRMED:** In November 2025 the FDA approved Paradromics' clinical study of its Connexus device for speech restoration in people with severe paralysis [6]. Paradromics had previously done a brief intraoperative human implant in 2025.
+**CONFIRMED:** In **November 2025** the FDA granted Paradromics an IDE for its **Connexus** high-data-rate implant for speech restoration in severe paralysis [6]; recruitment began **February 2026** [7]. Paradromics had previously performed a brief intraoperative human implant in 2025.
+
+**REPORTED:** Analysts do not expect any BCI PMA submission before **2027-2028** [7]. **Labeled analysis:** that is the single most important date in this report — it means no implanted BCI is on the market before roughly 2029, whatever the demo videos show.
 
 ---
 
@@ -79,13 +85,15 @@
 
 ### What is actually authorized
 
-**CONFIRMED:** The FDA's AI-enabled device list reached **1,451 authorizations** through end-2025, with 221 in 2023, 253 in 2024, and a record 295 in 2025. Radiology accounts for ~1,104 devices (~76%); pathology for about 9 (~0.6%) [17][18].
+**CONFIRMED:** The FDA's AI-enabled device list reached **1,451 authorizations** through end-2025, with 221 in 2023, 253 in 2024, and a record 295 in 2025. Radiology accounts for **1,104 devices (76%)**; pathology for about 9 (~0.6%) [17][18][43]. The leaderboard is legacy imaging OEMs, not AI startups: GE HealthCare 120 clearances, Siemens Healthineers 89, Philips 50, Canon 45, United Imaging 38, with Aidoc (31) and DeepHealth (28) the highest-placed pure-plays [43].
 
 **Labeled analysis:** The distribution is the story. Thirty years of AI device authorization is overwhelmingly image triage and measurement — narrow, deterministic, single-task tools. Almost none are generative or LLM-based. The gap between "AI passes medical licensing exams" and "AI is a regulated diagnostic" remains close to total.
 
 ### Benchmarks
 
-**REPORTED:** Microsoft AI's MAI-DxO orchestrator, paired with OpenAI o3, solved 85.5% of 304 NEJM clinicopathological conference cases restructured as the interactive Sequential Diagnosis Benchmark (SDBench), versus a mean ~20% for 21 US/UK physicians tested without references or colleagues [19][20]. Not peer-reviewed at the time of the announcement, and not deployed.
+**REPORTED:** Microsoft AI's MAI-DxO orchestrator, paired with OpenAI o3, solved **85.5% of 304 recent NEJM** clinicopathological conference cases restructured as the interactive Sequential Diagnosis Benchmark (SDBench), versus a mean **20%** for 21 practising US/UK physicians with 5-20 years' experience [19]. MAI-DxO also reported *lower* cumulative testing cost per case than either the physicians or any single foundation model — the orchestrator is doing cost-aware test ordering, not just guessing diagnoses.
+
+**CONFIRMED (Microsoft's own caveats):** the physicians worked "without access to colleagues, textbooks, or even generative AI"; SDBench and MAI-DxO are "research demonstrations only" and not public benchmarks; the system needs testing on common everyday presentations; and the work "is not yet approved for clinical use" [19].
 
 **CONFIRMED:** OpenAI's HealthBench, built with input from 262 physicians across 60 countries, comprises 5,000 realistic multi-turn health conversations graded against physician-written rubrics [21].
 
@@ -109,7 +117,7 @@
 
 **CONFIRMED:** Rentosertib (ISM001-055), a TNIK inhibitor for idiopathic pulmonary fibrosis with both target and molecule generated by AI, published Phase IIa results in *Nature Medicine* (2025) [24].
 
-**REPORTED:** Insilico initiated a Phase III trial in July 2026 — randomized, double-blind, placebo-controlled, ~320 IPF patients across China [25]. Separately, an inhaled formulation received China CDE IND clearance in April 2026, Insilico's 13th pipeline program to reach the clinic [26]. Rentosertib holds FDA Orphan Drug Designation (2023) and CDE Breakthrough Therapy Designation (May 2025).
+**CONFIRMED:** Insilico initiated the Phase III trial on **7 July 2026** — randomized, double-blind, placebo-controlled, **320 IPF patients across 47 Chinese centres** (CTR20262475 / NCT07687459), primary endpoint the annual rate of decline in forced vital capacity over 52 weeks, led by Prof. Zuojun Xu at Peking Union Medical College Hospital with Nanshan Zhong as co-lead PI [25]. Insilico states its platform reaches preclinical candidate nomination in an average of **12-18 months** while synthesizing only **60-200 molecules** per program, against an industry norm of 2.5-4 years and thousands of compounds [25]. Separately, an inhaled formulation received China CDE IND clearance in April 2026, Insilico's 13th pipeline program to reach the clinic [26]. Rentosertib holds FDA Orphan Drug Designation (2023) and CDE Breakthrough Therapy Designation (May 2025).
 
 **Labeled analysis:** This is the single most important data point in AI drug discovery, and it is Chinese-regulated. Rentosertib is the first molecule with an AI-nominated *target* and AI-generated *chemistry* to reach Phase III. If it reads out positive, the "AI drugs fail at the same rate" critique loses its strongest empirical footing. If it fails, it will be because target biology was wrong — which is exactly the part AI is worst at.
 
@@ -121,7 +129,9 @@
 
 ### Xaira and the capital picture
 
-**REPORTED:** Xaira launched in 2024 with over $1B, anchored by ARCH and Foresite with David Baker involved; it has produced no clinical candidate publicly as of 2026 [29]. Recursion (post-Exscientia merger) has cut pipeline programs and reduced headcount, with several clinical readouts failing to justify its earlier valuation.
+**REPORTED:** The disclosed capital stack as of April 2026: Eikon ~$1.5B, **Xaira ~$1.3B**, Insilico ~$800M (including a $293M Hong Kong IPO in December 2025), insitro $643M+, Isomorphic $600M external plus roughly $3B in Lilly/Novartis milestone deals, Iambic $300M+, Genesis Therapeutics ~$280M, Chai $225M+ [29]. Xaira, launched 2024 with ARCH/Foresite backing and David Baker involved, has no public clinical candidate. Recursion (post-Exscientia merger) has cut pipeline programs and headcount; the same analysis calls its integration "bumpy in practice" [29].
+
+**REPORTED:** Insilico is described in that survey as "the only one on this list with a clinically validated AI-discovered asset" — every other large-cap AI-discovery company remains preclinical or without human efficacy data [29].
 
 **Labeled analysis:** The sector's honest scorecard is: many INDs, several Phase I/II readouts, one Phase III (rentosertib), zero approvals attributable to end-to-end AI discovery. The measurable win is *speed to candidate* (Insilico's ~18 months target-to-IND vs a 4-6 year norm) — a genuine compression of the earliest, cheapest phase.
 
@@ -131,7 +141,9 @@
 
 ### Foundation models for biology
 
-**CONFIRMED:** Evo 2 (Arc Institute, NVIDIA, Stanford), trained on ~9.3 trillion DNA base pairs across all domains of life, published in *Nature* in 2026 [30][31]. It predicts variant pathogenicity — >90% accuracy on BRCA1 variant classification without task-specific training — and generates sequences at genome scale. Trained on ~2,000 H100s, roughly 150x the compute of AlphaFold and about 2x ESM3.
+**CONFIRMED:** Evo 2 (Arc Institute, NVIDIA, Stanford) was published in *Nature* in 2026 [30][31][44]. Two models — 7B and 40B parameters — trained on **9.3 trillion tokens** drawn from OpenGenome2 (>8.8 trillion nucleotides spanning bacteria, archaea, eukaryotes and phage), with a **1 million base pair context window** on a StripedHyena 2 hybrid-convolutional architecture (up to 3x throughput over a transformer baseline at max context) [44]. Zero-shot, it beats specialized supervised models on noncoding *BRCA1* variant effect prediction (>90% accuracy on pathogenic-variant identification), and it generates at genome scale: functional mitochondrial sequences with correct gene counts, ~580 kb of *M. genitalium*-like prokaryotic sequence with ~70% of genes matching known proteins, and structured yeast chromosomal DNA [44]. Training used ~2,000 H100s, roughly 150x AlphaFold's compute and about 2x ESM3's FLOPs.
+
+**CONFIRMED (the authors' own limits):** genome-scale generations "lack important elements, such as some essential genes," experimental validation still requires substantial iterative effort, and performance on human gene essentiality prediction is "modest" [44]. **Labeled analysis:** this is the most honest limitations paragraph in AI-bio. Evo 2 writes plausible genomes, not living ones. The distance between a sequence that scores well under a language model and an organism that boots is exactly the distance this whole field keeps underestimating.
 
 **CONFIRMED:** ESM3 (EvolutionaryScale) generated esmGFP, a fluorescent protein ~58% identical to the nearest natural sequence, estimated to represent hundreds of millions of years of simulated evolutionary distance.
 
@@ -139,7 +151,7 @@
 
 ### Personalized editing
 
-**CONFIRMED:** KJ Muldoon, born with severe CPS1 deficiency, received a bespoke LNP-delivered base editor at CHOP/Penn beginning February 2025, with follow-up doses in March and April 2025 [32][33]. He was discharged after 307 days [34].
+**CONFIRMED:** KJ Muldoon, born with severe CPS1 deficiency, received a bespoke LNP-delivered base editor at CHOP/Penn beginning February 2025, with follow-up doses in March and April 2025 [32][33]. He was discharged after 307 days [34]. **REPORTED:** the therapy cost roughly **$1M** — comparable to the liver transplant it substituted for — with researchers projecting a few hundred thousand dollars per treatment within a few years [36].
 
 **REPORTED:** One year on, the CHOP/Penn team is building a platform trial; the FDA has agreed to a protocol that could enroll as few as five patients across at least three genetic variants [35]. MIT Technology Review named base-edited personalized therapy a 2026 Breakthrough Technology [36].
 
@@ -220,7 +232,8 @@ The correct forecast is therefore not "a decade in a year" but **a barbell**: in
 
 | Item | Value | Label |
 |---|---|---|
-| Neuralink implanted participants (mid-2026) | ~26 | REPORTED |
+| Neuralink implanted participants (June 2026) | 26 (21 in Jan 2026) | REPORTED |
+| Neuralink N1 Link electrodes | up to 3,072 on 64 threads | CONFIRMED |
 | Neuralink valuation / last round | ~$9B / $650M | REPORTED |
 | Synchron Series D (Nov 2025) | ~$200M | REPORTED |
 | Merge Labs seed (Jan 2026) | $252M | REPORTED |
@@ -230,11 +243,15 @@ The correct forecast is therefore not "a decade in a year" but **a barbell**: in
 | — new in 2025 | 295 | CONFIRMED |
 | — radiology share | ~76% (1,104) | CONFIRMED |
 | — pathology share | ~0.6% (9) | CONFIRMED |
-| MAI-DxO (with o3) on SDBench NEJM cases | 85.5% vs ~20% physicians | REPORTED |
+| MAI-DxO (with o3) on SDBench, 304 NEJM cases | 85.5% vs 20% for 21 physicians | REPORTED |
+| Top FDA AI-device holders | GE 120, Siemens 89, Philips 50 | CONFIRMED |
 | HealthBench | 5,000 conversations, 262 physicians, 60 countries | CONFIRMED |
-| Rentosertib Phase III enrollment target | ~320 patients, China | REPORTED |
+| Rentosertib Phase III | 320 patients, 47 China sites, started 7 Jul 2026 | CONFIRMED |
+| Insilico target-to-preclinical-candidate | 12-18 months, 60-200 molecules | REPORTED |
+| AI-drug-discovery capital: Eikon / Xaira / Insilico / Isomorphic | ~$1.5B / ~$1.3B / ~$800M / $600M + ~$3B deals | REPORTED |
 | Insilico pipeline programs in clinic | 13 | REPORTED |
-| Evo 2 training data | ~9.3T DNA base pairs, 2,000 H100s | CONFIRMED |
+| Evo 2 | 7B & 40B params, 9.3T tokens, 1 Mb context | CONFIRMED |
+| Evo 2 generated prokaryotic genome | ~580 kb, ~70% genes matching known proteins | CONFIRMED |
 | Evo 2 BRCA1 variant classification | >90% accuracy | CONFIRMED |
 | RetroSOX/RetroKLF pluripotency marker gain | >50x | REPORTED |
 | Baby KJ: hospital days to discharge | 307 | CONFIRMED |
@@ -288,3 +305,7 @@ The correct forecast is therefore not "a decade in a year" but **a barbell**: in
 39. Longevity.Technology, "OpenAI sheds new light on longevity research" — https://longevity.technology/news/openai-sheds-new-light-on-longevity-research/
 40. Cortical Labs, CL1 — https://corticallabs.com/cl1
 41. ABC News, "Melbourne start-up launches 'biological computer' made of human brain cells," Mar 2025 — https://www.abc.net.au/news/science/2025-03-05/cortical-labs-neuron-brain-chip/104996484
+42. Synchron corporate site (accessed 7 Sep 2026) — https://synchron.com/
+43. The Imaging Wire, "Numbers from the FDA show radiology is maintaining its lead," 11 Mar 2026 — https://theimagingwire.com/2026/03/11/numbers-from-the-fda-show-radiology-is-maintaining-its-lead/
+44. Brixi, Durrant, Ku, Poli, Hsu et al., "Genome modelling and design across all domains of life with Evo 2," *Nature* / PMC13128491, 2026 — https://pmc.ncbi.nlm.nih.gov/articles/PMC13128491/
+45. STAT / Nature Medicine, Rentosertib Phase IIa (Jun 2025) — https://www.nature.com/articles/s41591-025-03743-2
