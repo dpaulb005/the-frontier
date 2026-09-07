@@ -2,6 +2,8 @@
 
 *Research report — compiled 2026-09-07. Claims labeled **CONFIRMED** (peer-reviewed or verifiable shipping product), **REPORTED** (credible press/company disclosure, not independently verified), **SPECULATION** (projection, simulation, or roadmap).*
 
+*Companion briefs: **04** (AI compute hardware — Nvidia/AMD/hyperscaler ASICs, HBM, co-packaged optics as a product category) and **06** (semiconductor and EE frontiers — process nodes, GAA/CFET, packaging). This brief deliberately does not re-derive those; it covers only paradigms **outside** the CMOS-GPU mainline, and cross-references where they touch.*
+
 ---
 
 ## TL;DR
@@ -29,15 +31,15 @@
 
 **Lightmatter** demonstrated four racks of production hardware at SC25 including M1000 and Passage 50, with a 16-wavelength bidirectional link at 800 Gbps over a single fiber and BER below 10⁻⁹ under thermal stress (**REPORTED**) [4]. In March 2026 it announced Passage L20, a 6.4 Tbps unified optical engine for near-package and on-board optics, sampling late 2026, and joined NVIDIA's NVLink Fusion ecosystem [5]. Its 2025 *Nature* paper demonstrated a photonic processor running ResNet, BERT, and an Atari deep-RL policy at near-electronic accuracy (**CONFIRMED**) [6]. Note the split, and note that Lightmatter has now made it official: **Envise, its photonic AI inference server, has been removed from the company's products listing**, and both its public messaging and its roadmap are now interconnect-first — Passage L200/L200x at 32–64 Tbps in 2026 [4][5][49]. **REPORTED**: a $400M Series D in October 2025 (Google re-investing) at a $4.4B valuation, ~$850M raised in total [49][50]. When the best-funded photonic-compute startup quietly stops selling photonic compute, that is the single most informative data point in this section.
 
-**Q.ANT** is the most interesting counterexample — a thin-film lithium niobate photonic NPU shipped as a PCIe card in a 19-inch rack server. **CONFIRMED**: units are installed at Germany's Leibniz Supercomputing Centre (LRZ) and Jülich Supercomputing Centre (JSC). **REPORTED**: LRZ's independent evaluation found the second-generation NPU up to 100× faster than gen 1, and Q.ANT's internal benchmarks claim up to 30× energy efficiency and 50× performance per application versus conventional processors; in May 2026 IONOS became the first commercial cloud datacenter to host the Native Processing Server [11][12]. The gen-1-to-gen-2 comparison is the load-bearing caveat: 100× over your own first prototype is not 100× over an H200.
+**Q.ANT** is the most interesting counterexample — a thin-film lithium niobate photonic NPU shipped as a PCIe card in a rack server. **CONFIRMED**: units are installed at Germany's LRZ and Jülich supercomputing centres. **REPORTED**: LRZ found the second-generation NPU up to 100× faster than gen 1; Q.ANT's internal benchmarks claim up to 30× energy efficiency versus conventional processors; in May 2026 IONOS became the first commercial cloud datacenter to host the Native Processing Server [11][12]. The load-bearing caveat: 100× over your own first prototype is not 100× over an H200.
 
-**Lightelligence** showed PACE 2 at OFC 2026 — an optoelectronic accelerator card with >40,000 photonic devices and a fully configurable 128×128 optical matrix, with ONNX/PyTorch/TVM support — and listed on the Hong Kong Stock Exchange on 28 April 2026 (01879.HK), the first pure-play AI silicon photonics listing (**REPORTED**) [13]. Academic work in *Nature Communications* (2026) reports 65.5 TOPS from four 128×128 photonic tensor cores at 78 W electrical (**CONFIRMED**) [7] — real, and roughly two orders of magnitude below a single modern GPU's dense throughput.
+**Lightelligence** showed PACE 2 at OFC 2026 — an optoelectronic accelerator card with >40,000 photonic devices and a fully configurable 128×128 optical matrix, with ONNX/PyTorch/TVM support — and listed on the Hong Kong Stock Exchange on 28 April 2026 (01879.HK), the first pure-play AI silicon photonics listing (**REPORTED**) [13]. Academic work reports 65.5 TOPS from four 128×128 photonic tensor cores at 78 W electrical (**CONFIRMED**) [7] — real, and roughly two orders of magnitude below a modern GPU's dense throughput.
 
 **Celestial AI** was acquired by Marvell for ~$3.25B, completed early 2026, after a $250M Series C1 in March 2025 (total >$515M) [8][9]. **Ayar Labs** raised $500M Series E in March 2026 — $870M total, $3.75B valuation — for its TeraPHY chiplet and SuperNova light source, with CEO Mark Wade projecting on-chip optical I/O maturity in 2026–2028 [10].
 
 ### Honest skepticism
 
-Analog optical neural networks still need DACs to load inputs and ADCs to read results, and high-speed converters are expensive in power — often enough to erase the optical MAC advantage [14]. There is no mature optical nonlinearity, so hybrid systems bounce between domains, adding latency and joules. Offline-trained weights degrade under thermal and fabrication drift. And as IEEE Spectrum notes, optical processors today are "typically far too bulky to achieve a compute density competitive with the best modern electronic processors" [15] — the wavelength of light is a hard floor on component size that Moore's law does not lower. Recent work co-locating electro-optic analog memory with the compute unit claims >26× power savings versus SRAM-DAC architectures, which is the right attack on the right problem [14], but it is 2026 lab work.
+Analog optical neural networks still need DACs to load inputs and ADCs to read results, and high-speed converters are expensive enough in power to erase the optical MAC advantage [14]. There is no mature optical nonlinearity, so hybrid systems bounce between domains, adding latency and joules; offline-trained weights degrade under thermal and fabrication drift; and optical processors remain "far too bulky to achieve a compute density competitive with the best modern electronic processors" [15] — the wavelength of light is a floor on component size that Moore's law does not lower. Recent electro-optic analog memory co-located with the compute unit claims >26× power savings versus SRAM-DAC architectures [14] — the right attack on the right problem, but 2026 lab work.
 
 **Verdict for 2030:** Optical interconnect — co-packaged optics, optical scale-up fabric — is a near-certainty in AI datacenters, arguably already there. Optical *compute* as a mainstream training or inference substrate by 2030: unlikely; plausible as a niche co-processor for fixed-weight, latency-critical, or optimization workloads.
 
@@ -49,13 +51,11 @@ The pitch: generative AI is fundamentally sampling from a distribution. GPUs com
 
 **Extropic.** **CONFIRMED**: the X0 prototype exists and runs at room temperature, comprising dozens of probabilistic circuits (p-bits); the XTR-0 development platform shipped from Q3 2025 [16]. **REPORTED** (as of mid-2026, materially further along than the 2025 picture): the Z1 production part is specified at >269,000 p-bits with 16-neighbour connectivity, a sampling rate above 50 MHz, on a die under 12 mm a side, drawing under one watt — to ship as an M.2 "thermo compute stick" and as a PCIe card carrying >4 million p-bits [16][51]. Extropic also published **Z1T** in August 2026 — a family of sparse transformer-*like* models fitted to Z1's topology (269,568 p-bits, 2,135,904 coupling edges), replacing softmax attention with gated convolutional attention and splitting inference between Z1 and an FPGA [52]. The Z1T numbers are the most useful disclosure any thermodynamic-computing company has made, precisely because they are self-undermining in the right way: per-token energy is **294.52 nJ, of which 285.78 nJ (97%) is the FPGA and only 8.74 nJ is the Z1 itself**. Against an H100 at 50% MFU that is ~28× including the FPGA overhead, versus 935× for the Z1-only sparse layers. And Z1T needs roughly **an order of magnitude more FLOPs than GPT-2 to reach the same loss**. Extropic states plainly that the Z1 energy figures are theoretical estimates anchored to X0 experiments, not measurements from Z1 silicon [52]. **SPECULATION**: the widely-quoted 10,000× energy saving still comes from *simulating part of* Z1 running a Denoising Thermodynamic Model on a low-resolution image benchmark [16][18]. Read the 28× and the 97%-is-FPGA together and you have this entire report's thesis in one company: the exotic core is genuinely cheap, and the conventional digital periphery it needs eats the win. That is the same tax that has beaten analog optical, memristive, and neuromorphic accelerators for two decades. **REPORTED**: on 30 July 2026 Extropic signed a letter of intent with the US Department of Commerce for up to $75M through the CHIPS R&D Office to scale TSUs and onshore manufacturing [17] — meaningful third-party diligence, though an LOI is not disbursed money.
 
-The skeptical read is worth stating plainly: p-bit and stochastic computing are decades-old ideas; the demonstrated benchmark is a small black-and-white image task, not a multimodal or language workload; and analog device variability, calibration, and verification are exactly the problems that have historically killed analog accelerators. Critics have characterized XTR-0 as stochastic computing in thermodynamic packaging. The counter is that Extropic's device physics (shaping thermal fluctuations directly, rather than building a digital RNG) is genuinely different, and CMOS-compatible at room temperature — which was the historical blocker.
+The skeptical read: p-bit and stochastic computing are decades-old ideas, and analog device variability, calibration and verification are exactly what has historically killed analog accelerators. The counter is that Extropic's device physics — shaping thermal fluctuations directly rather than building a digital RNG — is genuinely different and CMOS-compatible at room temperature, which was the historical blocker.
 
-**Normal Computing** took a more conservative path. **CONFIRMED**: CN101, announced taped out on 12 August 2025, is a *digital* thermodynamic computing chip on standard CMOS using stochastic-computing and metastability principles, targeting linear algebra, matrix operations, and stochastic sampling [19][20][21]. **REPORTED**: up to 1000× energy efficiency on targeted AI and scientific workloads. **SPECULATION**: roadmap of CN201 in 2026 for high-resolution diffusion models and CN301 in late 2027. Doing it in standard CMOS is the strategically smart move — it means fab access and yield are not the risk.
+**Normal Computing** took a more conservative path. **CONFIRMED**: CN101, announced taped out on 12 August 2025, is a *digital* thermodynamic computing chip on standard CMOS using stochastic-computing and metastability principles, targeting linear algebra, matrix operations, and stochastic sampling [19][20][21]. **REPORTED**: up to 1000× energy efficiency on targeted workloads; roadmap of CN201 in 2026 and CN301 in late 2027 (**SPECULATION**). Doing it in standard CMOS is strategically smart — fab access and yield are not the risk. *Quanta* covered the field in July 2026, a marker that it has moved from fringe to legitimately-watched [18].
 
-*Quanta* covered the field in July 2026, a reasonable marker that it has moved from fringe to legitimately-watched [18].
-
-**Verdict for 2030:** SPECULATION either way. This is the highest-variance category on the list: if diffusion/energy-based generative models remain economically central and TSUs scale, the payoff is enormous; if the industry's compute demand stays autoregressive-transformer-shaped, TSUs address the wrong workload. A demonstrated 10× on a real production model would change my assessment more than any funding round.
+**Verdict for 2030:** The highest-variance category here. If energy-based/diffusion models stay economically central and TSUs scale, the payoff is enormous; if demand stays autoregressive-transformer-shaped, TSUs address the wrong workload. A measured 10× on a production model would move me more than any funding round.
 
 ---
 
@@ -65,7 +65,7 @@ Landauer's principle says erasing a bit must dissipate at least *kT* ln 2 — 2.
 
 **CONFIRMED**: In March 2025, **Vaire Computing** taped out "Ice River" in a commercial 22 nm planar CMOS process — the first chip to achieve *net* energy recovery in a commercial process, with a measured energy-recovery factor of 1.77× for a capacitor array and 1.41× for a shift-register/adder relative to square-wave-driven equivalents, and an on-chip resonator recycling ~50% of energy on average [22][23]. IEEE Spectrum's framing — "reversible computing escapes the lab" — is fair.
 
-The honest caveats: adiabatic switching energy scales roughly with 1/(switching time), so energy savings are bought with clock speed. At the frequencies AI accelerators run, adiabatic circuits lose. The resonator infrastructure costs area. And 1.41× on a shift register is a very long way from a competitive datacenter part. Vaire's own framing ("near-zero energy chips") outruns its data by a wide margin.
+The honest caveats: adiabatic switching energy scales roughly with 1/(switching time), so savings are bought with clock speed — at AI-accelerator frequencies, adiabatic circuits lose. Resonator infrastructure costs area. Vaire's "near-zero energy chips" framing outruns its data by a wide margin.
 
 **Verdict for 2030:** Not in AI datacenters. Plausible in ultra-low-power edge or in specific always-on blocks. Worth tracking as the only line of work attacking the thermodynamic floor directly rather than the constant factors above it.
 
@@ -85,9 +85,9 @@ Multiply-accumulate performed physically in a memory array — by charge, resist
 
 **Sagence** claims Llama 2-70B at one-tenth the power of an H100 system, one-twentieth the cost and space (**REPORTED**, unverified) [26]. **TetraMem** is the RRAM entry: **CONFIRMED** tape-out, manufacture and initial silicon validation of MLX200, a 22 nm multi-level-RRAM analog IMC SoC on TSMC, with evaluation sampling expected in H2 2026 — the first credible move of memristive analog compute from 65 nm research silicon to a manufacturable node [64]. **Rain AI** has pivoted repeatedly and has not shipped a datacenter part.
 
-**Memristors/RRAM**: 2026 *Nature Electronics* work on "fault-free analogue computing with imperfect hardware" [35] and 5-bit-controllable oxide RRAM crossbars represent genuine progress on the precision problem, but commercialization "faces substantial hurdles, necessitating a paradigm shift from traditional transistor dominance." **Spintronics**: a *Nature Electronics* paper (October 2025) demonstrated a lossless, fully parallel STT-MRAM digital compute-in-memory macro [36], and CRAM-ER at GLSVLSI 2026 extended spintronic CRAM to multi-bit DNN workloads. MRAM's advantage — non-volatility and near-zero leakage — makes it a strong weight-storage candidate; note that the strongest recent result is *digital* CIM in MRAM, not analog, which is telling.
+**Memristors/RRAM**: 2026 *Nature Electronics* work on fault-free analogue computing with imperfect hardware [35] and 5-bit-controllable oxide RRAM crossbars are genuine progress on the precision problem [64]. **Spintronics**: a lossless, fully parallel STT-MRAM *digital* compute-in-memory macro [36], plus CRAM-ER extending spintronic CRAM to multi-bit DNNs [44]. MRAM's non-volatility and near-zero leakage make it a strong weight-*storage* candidate; that the strongest recent result is digital CIM rather than analog is telling.
 
-**Honest skepticism**: IEEE Spectrum's summary is the one to keep — analog AI has historically "delivered modest savings, and only for modest-sized neural networks" [25]. Analog wins at low precision and small models; frontier training needs high dynamic range, and the ADC tax scales with array size. Every analog generation has also been outrun by the next digital node.
+**Honest skepticism**: IEEE Spectrum's summary is the one to keep — analog AI has historically "delivered modest savings, and only for modest-sized neural networks" [25]. Analog wins at low precision and small models; frontier training needs high dynamic range, the ADC tax scales with array size, and every analog generation has been outrun by the next digital node.
 
 **Verdict for 2030:** Edge and client devices, yes — already happening. Datacenter inference for smaller models: possible, ~30%. Training: no.
 
@@ -95,17 +95,17 @@ Multiply-accumulate performed physically in a memory array — by charge, resist
 
 ## 5. Neuromorphic computing
 
-**CONFIRMED**: Intel's Hala Point packs 1.15 billion neurons across 1,152 Loihi 2 processors on Intel 4, in a six-rack-unit chassis [28]. Published ICASSP results show orders-of-magnitude gains on small-scale edge workloads. **CONFIRMED** (2025–26 research): neuromorphic principles applied to LLMs on Loihi 2 report up to ~3× less energy than transformer LLMs on an edge GPU, with better scaling [29] — real, but a 3× on an edge comparison is not a datacenter argument.
+**CONFIRMED**: Intel's Hala Point packs 1.15 billion neurons across 1,152 Loihi 2 processors on Intel 4, in a six-rack-unit chassis [28]. Neuromorphic principles applied to LLMs on Loihi 2 report up to ~3× less energy than transformer LLMs on an edge GPU [29] — real, but a 3× against an edge GPU is not a datacenter argument.
 
-Commercial traction is at the sensor edge. **Innatera** raised $21M in an extended Series A (from a $16M round that was oversubscribed) and launched Pulsar, positioned as the first mass-market neuromorphic microcontroller, plus the Synfire ecosystem effort [30]. **SynSense** raised $27.7M in July 2025 to scale its Speck vision SoC and DYNAP-CNN2, having merged with iniVation [31].
+Commercial traction is at the sensor edge: **Innatera** raised $21M and launched Pulsar, positioned as the first mass-market neuromorphic microcontroller [30]; **SynSense** raised $27.7M in July 2025 for its Speck vision SoC and DYNAP-CNN2 [31].
 
 **SpiNNcloud / SpiNNaker2** is the most credible attempt to put neuromorphic hardware in an actual machine room, and it deserves to be in this brief. **CONFIRMED**: SpiNNaker2 (Steve Furber's architecture, commercialized by Dresden-based SpiNNcloud) packs 152 Arm cores plus accelerators per chip, 48 chips per board. Sandia National Laboratories took delivery in June 2025 of a system simulating 150–180 million neurons [56]. **REPORTED**: a Leipzig University system of 656,640 cores / ~4,320 chips, simulating ≥650 million neurons, is the largest ordered to date, and is aimed at protein folding and personalized medicine [57]. Note what those customers are: national labs and universities buying a *simulation instrument*, not hyperscalers buying inference capacity.
 
 **BrainChip** is the public-market reality check on edge neuromorphic. **CONFIRMED**: revenue of US$1.89M for FY2025 (up 374% from US$398k) and US$1.22M in H1 2026 against a ~US$12M net loss; a US$25M raise in December 2025; AKD1500 in volume production with silicon expected Q3 2026; a US$1.8M Raytheon/AFRL SBIR contract for neuromorphic radar processing [58][59]. Those are real numbers and they are tiny — a listed neuromorphic pure-play doing single-digit-million revenue after a decade is the honest scale of this market.
 
-The structural problem: spiking networks excel at sparse, event-driven, temporally-structured data; dense transformer matmuls are the opposite. Neuromorphic hardware also lacks a training story competitive with backpropagation at scale. Eight years after Loihi 1, there is still no neuromorphic datacenter workload with a compelling TCO case.
+The structural problem: spiking networks excel at sparse, event-driven, temporally-structured data; dense transformer matmuls are the opposite, and neuromorphic hardware lacks a training story competitive with backpropagation at scale. Eight years after Loihi 1, there is no neuromorphic datacenter workload with a compelling TCO case.
 
-**Verdict for 2030:** In AI *datacenters*, no. In always-on sensors, wearables, robotics, and satellites, yes — a real and growing market that is simply not the AI-compute market.
+**Verdict for 2030:** In AI *datacenters*, no. In always-on sensors, wearables, robotics and satellites, yes — a real and growing market that is simply not the AI-compute market.
 
 ---
 
@@ -141,7 +141,7 @@ The blockers are unchanged: cryogenic overhead at 4 K costs roughly 10²–10³ 
 
 ## 9. Wafer-scale, processing-in-memory, and reconfigurable dataflow — the boring winners
 
-These three share a property the exotic paradigms lack: they are made of transistors, in existing fabs, with existing supply chains.
+These three share a property the exotic paradigms lack: transistors, existing fabs, existing supply chains.
 
 **Wafer-scale (Cerebras).** **CONFIRMED**: WSE-3 is 4 trillion transistors, 900,000 cores, 44 GB on-wafer SRAM, 46,225 mm². **REPORTED**: WSE-3 Turbo doubles compute to 250 PFLOPS per wafer at the same silicon; the CS-4, announced 18 August 2026, ties three wafers in parallel and delivers >4,400 tokens/s/user on gpt-oss-120B, claimed up to 30× faster than GPU solutions; Cerebras runs OpenAI's GPT-5.6 Sol at up to 750 tokens/s [37].
 
@@ -151,7 +151,7 @@ Put that against the rest of this report: 600 MW is a real fraction of global AI
 
 **Processing-in-memory.** **REPORTED**: at Hot Chips 2026 Samsung laid out a three-phase HBM roadmap that progressively moves logic and compute into memory, culminating in "zHBM" — DRAM stacked directly on the processor [38]. SK hynix showed a 16-layer, 48 GB HBM4 at CES 2026 with Q3 2026 mass production, and continues to demo AiM/AiMX PIM accelerators [39]. **REPORTED** (Aug 2026): Samsung's 4 nm **GAIA** could be the first commercial PIM part, targeted at AI PCs with mass production as early as 2027 [60]; SK hynix showed AiMX (a GDDR6-AiM-based LLM accelerator prototype), CuD and CMM-Ax to hyperscaler customers at CES 2026 [39][61]. Industry estimates put PIM's energy-efficiency advantage at "dozens of times" for memory-bound operations, and the consensus timeline has specialized AI units integrated into the HBM *logic die* around 2027 [60]. The strategic split is notable: Samsung is betting PIM succeeds HBM; SK hynix is betting HBM stays the standard and is hedging with prototypes. (Brief 06 covers the HBM4/HBM4E process and packaging side; this brief covers only the compute-in-memory question.)
 
-**Reconfigurable dataflow / CGRA.** **REPORTED**: SambaNova's SN50 RDU — a coarse-grained reconfigurable architecture, fifth generation — targets models up to 10T parameters and 10M-token context, chaining operations into continuous dataflow to avoid repeated memory round-trips; the SN40L combined on-chip SRAM, HBM, and DDR in a three-tier hierarchy and reported 129 tokens/s/user on Llama 3.1 405B [40]. FPGA-style reconfigurability has not "revived" so much as been absorbed: the winning form is coarse-grained and AI-specific, not LUT-level.
+**Reconfigurable dataflow / CGRA.** **REPORTED**: SambaNova's fifth-generation SN50 RDU targets models up to 10T parameters and 10M-token context, chaining operations into continuous dataflow to avoid memory round-trips; the SN40L reported 129 tokens/s/user on Llama 3.1 405B [40]. FPGA-style reconfigurability has not "revived" so much as been absorbed — the winning form is coarse-grained and AI-specific, not LUT-level.
 
 **Verdict for 2030:** PIM is the highest-probability entrant (I would put it near-certain in some form, given it ships inside HBM). Wafer-scale is already deployed. CGRA persists as a differentiated niche against a dominant GPU incumbent.
 
@@ -161,15 +161,15 @@ Put that against the rest of this report: 600 MW is a real fraction of global AI
 
 Landauer's bound at 300 K is 2.87×10⁻²¹ J per erased bit. A real 8-bit MAC in leading-edge CMOS costs on the order of 0.1–1 pJ — roughly **10⁷ to 10⁸ times** the thermodynamic floor. So the interesting fact is not that we are near a physical limit; it is that we are nowhere near it, and something else is binding.
 
-That something else is **data movement**. In GPUs the majority of energy is spent moving bits, not multiplying them [41]. Designers now budget in picojoules per bit (identical to milliwatts per Gb/s), and as clusters scale from tens of thousands to hundreds of thousands of accelerators, interconnect power becomes disproportionately architecture-defining [41]. A *Nature Electronics* 2026 review of co-packaged optics for HPC and AI makes the same argument from the optics side [41].
+That something else is **data movement**. In GPUs the majority of energy is spent moving bits, not multiplying them; designers now budget in picojoules per bit, and as clusters scale to hundreds of thousands of accelerators, interconnect power becomes architecture-defining [41].
 
-This reframes the whole list. Every paradigm above is really a bet on one of three propositions:
+This reframes the whole list. Every paradigm above is a bet on one of three propositions:
 
-- **Move data more cheaply** (photonic interconnect, co-packaged optics, wafer-scale, PIM). This is where the real money and near-term deployments are.
-- **Don't move data at all** (analog in-memory, PIM, memristors, spintronics). Second most likely to matter.
-- **Change what a computation costs** (thermodynamic, reversible, neuromorphic, biological). Highest ceiling, longest odds, least evidence.
+- **Move data more cheaply** (photonic interconnect, co-packaged optics, wafer-scale, PIM) — where the real money and near-term deployments are.
+- **Don't move data at all** (analog in-memory, PIM, memristors, spintronics) — second most likely to matter.
+- **Change what a computation costs** (thermodynamic, reversible, neuromorphic, biological) — highest ceiling, longest odds, least evidence.
 
-Analyses of CMOS energy-efficiency limits [42] suggest conventional digital has perhaps 1–2 orders of magnitude of headroom left through voltage scaling, specialization, and lower precision — which is enough to keep GPUs winning through 2030 unless an alternative delivers 10× on a *real* production workload, not a benchmark.
+Analyses of CMOS energy-efficiency limits [42] suggest conventional digital has perhaps 1–2 orders of magnitude of headroom left via voltage scaling, specialization and lower precision — enough to keep GPUs winning through 2030 unless an alternative delivers 10× on a *real* production workload.
 
 ---
 
@@ -217,28 +217,29 @@ The honest shape of this table: **ranks 1–4 are packaging, memory and light �
 
 ## Key numbers table
 
-| Paradigm | Leading org | Best demonstrated number | Status label | Funding / scale | In AI datacenters by 2030? |
-|---|---|---|---|---|---|
-| Analog optical compute | Microsoft AOC | 256 weights/pass, 4,096 time-multiplexed; ~20 ns loop; 99.8% MNIST [1] | CONFIRMED (hardware) / SPECULATION (500 TOPS/W) | Microsoft Research | Unlikely (niche possible) |
-| Photonic interconnect | Ayar Labs, Marvell/Celestial, Lightmatter | 800 Gbps/fiber, 16λ bidirectional, BER <10⁻⁹; Passage L20 6.4 Tbps [4][5] | REPORTED / shipping | Ayar $870M total, $3.75B val; Celestial acquired ~$3.25B [8][10] | **Yes — already arriving** |
-| Photonic NPU (TFLN) | Q.ANT | Deployed at LRZ + JSC; 100× vs own gen-1; claimed 30× energy eff. [11][12] | CONFIRMED (deployment) / REPORTED (perf) | IONOS cloud partnership, May 2026 | Niche, ~25% |
-| Photonic tensor core (academic) | Various | 65.5 TOPS @ 78 W, 4× 128×128 cores [7] | CONFIRMED | Academic | Research |
-| Thermodynamic sampling | Extropic | X0: dozens of p-bits, room temp; 10,000× from Z1 *simulation* [16] | CONFIRMED (X0) / SPECULATION (10,000×) | $75M DoC LOI, Jul 2026 [17] | ~15%, high variance |
-| Digital thermodynamic | Normal Computing | CN101 taped out Aug 2025, standard CMOS; ~1000× claimed [19][21] | REPORTED | CN201 2026, CN301 2027 | ~20% |
-| Reversible/adiabatic | Vaire | 1.77× capacitor array, 1.41× adder, ~50% recycling, 22 nm [22][23] | CONFIRMED | Seed/Series A scale | No |
-| Analog in-memory (edge) | EnCharge | 200+ TOPS @ 8.25 W; >40 TOPS/W; ~20× perf/W [24] | CONFIRMED (shipping) | Launched May 2025 | Edge yes; DC ~30% |
-| Analog in-memory (PCM) | IBM HERMES | 35M PCM cells / 17M params; near-software accuracy [27] | CONFIRMED (research) | IBM Research | Research |
-| Neuromorphic (scale) | Intel Hala Point | 1.15B neurons, 1,152 Loihi 2, 6RU [28] | CONFIRMED | Intel Labs | No |
-| Neuromorphic (edge) | Innatera, SynSense | Pulsar MCU; Speck vision SoC [30][31] | CONFIRMED (shipping) | Innatera $21M; SynSense $27.7M | Sensor edge yes |
-| Superconducting SFQ | NIST / academia | >100 GHz potential; qubit control demos [43] | CONFIRMED (lab) | Government/academic | No |
-| DNA storage | Atlas Data Storage | Target TB-scale 2026; ~$100k/MB today [34] | REPORTED / SPECULATION | Twist spin-out | No (archive niche) |
-| Biological | Cortical Labs CL1 | 20 units, ~800k neurons each, 59 electrodes, 25 W, 6-mo life [32][33] | CONFIRMED | Singapore rack Aug 2026 | No |
-| Memristor / RRAM | Academic + IBM | 5-bit conductance control; fault-tolerant analog compute [35] | CONFIRMED (lab) | Academic | Research |
-| Spintronics / MRAM CIM | Nature Elec. 2025 | Lossless parallel STT-MRAM digital CIM macro [36] | CONFIRMED (lab) | Academic + Qualcomm patents | ~15% (as weight memory) |
-| Wafer-scale | Cerebras | 4T transistors, 900k cores, 44 GB SRAM; >4,400 tok/s/user [37] | CONFIRMED (shipping) | IPO May 2026, ~$26–27B | **Yes — already deployed** |
-| Processing-in-memory | Samsung, SK hynix | HBM4 16-hi 48 GB, Q3 2026 MP; zHBM roadmap [38][39] | REPORTED / roadmap | Memory-industry capex | **Yes, high probability** |
-| CGRA / dataflow | SambaNova | SN50: 10T params, 10M context; 129 tok/s Llama 405B [40] | REPORTED | Private | Niche, persists |
-| Physics floor | — | Landauer 2.87×10⁻²¹ J/bit @300K; real MAC ~10⁷–10⁸× that [42] | CONFIRMED | — | — |
+Only measured or company-disclosed figures. Projections are marked.
+
+| Item | Number | Label |
+|---|---|---|
+| Microsoft AOC hardware | 16 microLEDs / 16 photodetectors; 256 weights per pass, 4,096 time-multiplexed; ~20 ns loop; 99.8% MNIST [1] | CONFIRMED |
+| Microsoft AOC efficiency | 500 TOPS/W @ 8-bit vs 4.5 TOPS/W GPU baseline; needs 50–1,000 modules for 0.1–2B weights [1] | SPECULATION (projection) |
+| Photonic tensor cores (academic) | 65.5 TOPS at 78 W electrical, 4× 128×128 cores [7] | CONFIRMED |
+| Lightmatter optical link | 16λ bidirectional, 800 Gbps single fiber, BER <10⁻⁹; Passage L20 6.4 Tbps [4][5] | REPORTED |
+| Photonics funding | Celestial→Marvell ~$3.25B; Ayar $870M raised / $3.75B val.; Lightmatter ~$850M / $4.4B val. [8][10][49][50] | CONFIRMED |
+| Extropic Z1 | 269,568 p-bits, 2,135,904 coupling edges, >50 MHz sampling, <12 mm die, <1 W [51][52] | REPORTED (spec) |
+| Extropic Z1T per-token energy | 294.52 nJ = 8.74 nJ Z1 + **285.78 nJ FPGA**; ~28× vs H100 all-in, 935× Z1-only; ~10× more FLOPs than GPT-2 for equal loss [52] | SPECULATION (estimated, not measured) |
+| Vaire reversible | 1.77× recovery (capacitor array), 1.41× (shift-register/adder), ~50% recycled, 22 nm [22][23] | CONFIRMED |
+| EnCharge EN100 | 200+ TOPS at 8.25 W (>40 TOPS/W), M.2 form factor [24] | CONFIRMED (shipping) |
+| Mythic / TetraMem | Mythic $125M Dec-2025, >$175M total; TetraMem MLX200 22 nm RRAM SoC, sampling H2-2026 [53][64] | CONFIRMED |
+| Intel Hala Point | 1.15B neurons, 1,152 Loihi 2, 6RU; LLM work ~3× energy vs edge GPU [28][29] | CONFIRMED |
+| SpiNNcloud | Sandia 150–180M neurons (2025); Leipzig 656,640 cores / ~4,320 chips / ≥650M neurons [56][57] | CONFIRMED / REPORTED |
+| BrainChip revenue | US$1.89M FY25 (+374%); US$1.22M H1-26 vs ~US$12M net loss [58] | CONFIRMED |
+| Cerebras WSE-3 / CS-4 | 4T transistors, 900k cores, 44 GB SRAM, 46,225 mm²; CS-4 >4,400 tok/s/user on gpt-oss-120B [37] | CONFIRMED / REPORTED |
+| Cerebras scale | IPO $185/sh, $5.55B raised; Q2-26 core rev $209.9M (+103% YoY); >600 MW live-or-contracted; OpenAI 750 MW / >$20B [45][47][48] | CONFIRMED / REPORTED |
+| Memory PIM | SK hynix 16-hi 48 GB HBM4 (CES-26); Samsung 4 nm GAIA PIM, MP as early as 2027; zHBM roadmap [38][60][61] | REPORTED / roadmap |
+| Cortical Labs CL1 | 20 units, ~800k neurons each, 59 electrodes, ~25 W/unit, 6-month lifespan [32][33] | CONFIRMED |
+| DNA storage cost | ~$100,000/MB today vs ~$1,000/TB adoption threshold [34] | REPORTED |
+| Landauer bound | 2.87×10⁻²¹ J/bit erased @ 300 K; real 8-bit MAC ~0.1–1 pJ = 10⁷–10⁸× the floor [42] | CONFIRMED |
 
 ---
 
@@ -307,3 +308,6 @@ The honest shape of this table: **ranks 1–4 are packaging, memory and light �
 61. TrendForce, "SK hynix Debuts 16-Layer 48GB HBM4 at CES 2026," 6 Jan 2026 — https://www.trendforce.com/news/2026/01/06/news-sk-hynix-debuts-16-layer-48gb-hbm4-at-ces-2026-alongside-socamm2-and-lpddr6/
 62. Korea JoongAng Daily, "Samsung bets on PIM as SK hynix advances cooler HBM for AI memory," 2026 — https://www.koreajoongangdaily.com/business/samsung-bets-on-pim-while-sk-hynix-keeps-eye-on-hbm/12846274
 63. IBM Research, "An energy-efficient analog chip for AI inference," accessed Sep 2026 — https://research.ibm.com/blog/analog-ai-chip-inference
+64. BusinessWire, "TetraMem Announces 22nm Multi-Level RRAM Analog In-Memory Computing SoC Milestone," 16 May 2026 — https://www.businesswire.com/news/home/20260516556464/en/TetraMem-Announces-22nm-Multi-Level-RRAM-Analog-In-Memory-Computing-SoC-Milestone
+65. IBM Research, "A Cryo-CMOS Control System for Large-Scale Superconducting Qubit Quantum Computing," APS Global Physics Summit 2026 — https://research.ibm.com/publications/a-cryo-cmos-control-system-for-large-scale-superconducting-qubit-quantum-computing-part-1
+66. Research Square, "Cryogenic hardware accelerator for Quantum State Discrimination at 4K," 2025 — https://www.researchsquare.com/article/rs-7661185/v1
