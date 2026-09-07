@@ -8,16 +8,16 @@
 
 ## TL;DR
 
-1. The defining shift of 2026 is that the frontier moved from *invention* to *manufacturing*. Sodium-ion left the lab at GWh scale, perovskite tandems entered pilot production, enhanced geothermal is about to sell its first commercial electron, and the first US advanced-reactor construction permit in 40+ years was issued. Almost nothing on this list is a new physical principle; nearly all of it is a factory.
+1. The frontier moved from *invention* to *manufacturing*. Sodium-ion left the lab at GWh scale, perovskite tandems entered pilot production, enhanced geothermal is about to sell its first commercial electron, and the first US advanced-reactor construction permit in 40+ years was issued. Almost nothing here is a new physical principle; nearly all of it is a factory.
 2. **Grid storage is scaling faster than any energy technology in history.** BNEF forecasts ~158 GW / 459 GWh of global deployments in 2026, up ~41% from a record ~112 GW in 2025. LFP is ~90% of it. **CONFIRMED (forecast is REPORTED)** [1][2]
-3. **Batteries got cheap enough to be boring.** Global lithium-ion pack prices fell 8% to a record **$108/kWh** in 2025 — and stationary-storage packs fell 45% in a single year to **$70/kWh**, now the cheapest segment. China average: $84/kWh. **CONFIRMED** [3]
+3. **Batteries got cheap enough to be boring.** Global lithium-ion pack prices fell 8% to a record **$108/kWh** in 2025; stationary-storage packs fell **45% in one year to $70/kWh**, now the cheapest segment. **CONFIRMED** [3]
 4. **Sodium-ion crossed the threshold.** CATL's Naxtra entered GWh-scale production in 2026, reportedly at ~$19/kWh at the cell level vs ~$55-60/kWh for LFP, alongside a 60 GWh supply agreement with HyperStrong. **REPORTED** [4][5]
-5. **Solar had its first down year on record.** BNEF projects ~649 GW in 2026 vs ~655 GW in 2025 — the first contraction in data going back to 2000 — driven entirely by China cooling ~14%. Non-China solar keeps growing to ~308 GW. **REPORTED** [6][7]
+5. **Solar had its first down year on record.** BNEF projects ~649 GW in 2026 vs ~655 GW in 2025 — the first contraction since records began in 2000 — driven entirely by China cooling ~14%. Non-China installs grow to ~308 GW. **REPORTED** [6][7]
 6. **Perovskite tandems hit 35.5% certified cell efficiency** (LONGi, July 2026), while shipping modules land at 26-28%. The lab-to-module gap, not the record, is the story. **CONFIRMED** [8][9]
-7. **Fusion slipped — but the hardware and the money are real.** CFS's SPARC first plasma moved to 2027 (~75% construction complete); Helion's Polaris reached 150 million °C. Private fusion funding now exceeds **$13B**. Nobody is within 12 months of grid electricity. **REPORTED** [10][11][12]
+7. **Fusion slipped; the hardware and money did not.** SPARC first plasma moved to 2027 (~75% built); Helion's Polaris reached 150 million °C; private funding exceeds **$13B**. Nobody is within 12 months of grid electricity. **REPORTED** [10][11][12]
 8. **Enhanced geothermal goes commercial this quarter.** Fervo's Cape Station Phase I (100 MW) is expected to deliver power in late 2026, at ~$7,000/kW falling toward a targeted $3,000/kW, backed by a 396 MW Google PPA. **REPORTED** [13][14]
-9. **Transmission is the binding constraint and everyone now agrees.** ~2,600 GW sits in US interconnection queues; ~14 GW withdraw for every 1 GW built; PJM capacity prices went from $28.92/MW-day to $329.17/MW-day across two delivery years. **REPORTED** [15][16]
-10. **Hydrogen's correction is essentially complete.** 33+ GW of projects cancelled, 60-70% wiped from hydrogen equities, Air Products' $3.1B charge, CF Industries' $51M impairment. What survives is industrial feedstock, not an energy carrier. **CONFIRMED (aggregate figures REPORTED)** [17][18]
+9. **Transmission is the binding constraint.** ~2,600 GW sits in US interconnection queues; ~14 GW withdraw per 1 GW built; PJM capacity prices went from $28.92 to $329.17/MW-day across two delivery years. **REPORTED** [15][16]
+10. **Hydrogen's correction is complete.** 33+ GW cancelled, 60-70% wiped from hydrogen equities, Air Products' $3.1B charge, CF Industries' $51M impairment. What survives is industrial feedstock, not an energy carrier. **REPORTED** [17][18]
 
 ---
 
@@ -37,9 +37,9 @@ That happened *despite* rising lithium and cobalt prices — overcapacity and co
 
 CATL's chief scientist Wu Kai stated the company resolved core manufacturing challenges, with large-scale sodium-ion production from Q4 2026 [4]. The Naxtra product line reached GWh-scale, paired with a reported **60 GWh supply agreement with HyperStrong** — the largest sodium-ion deal recorded. Specs: **up to 175 Wh/kg**, passing China's latest national EV traction-battery safety standard [4][5]. **REPORTED**
 
-Cost claims deserve care. Widely circulated figures put Naxtra cells at **~$19/kWh vs ~$55-60/kWh for LFP cells** [5]. **SPECULATION** — that gap is implausibly large for a chemistry with lower energy density and a less mature supply chain; it likely reflects a marginal/strategic price or a favorable accounting boundary, not sustainable full cost. The more sober industry read comes from HiNa Battery's general manager Li Shujun, who forecasts sodium reaching **cost parity with lithium in 2027-2028** [19] — i.e. sodium is not yet cheaper on a like-for-like basis. **REPORTED**
+Cost claims deserve care. Circulated figures put Naxtra cells at **~$19/kWh vs ~$55-60/kWh for LFP cells** [5]. **SPECULATION** — that gap is implausibly large for a lower-density chemistry with a less mature supply chain, and likely reflects a strategic price or favorable accounting boundary rather than sustainable full cost. The sober read is HiNa GM Li Shujun's forecast of **cost parity with lithium in 2027-2028** [19] — i.e. sodium is not yet cheaper like-for-like. **REPORTED**
 
-Where sodium actually wins in 2026: cold-climate performance, grid storage where volumetric density is irrelevant, and as a lithium-price hedge. Changan is fielding a commercial sodium-ion EV using CATL cells [4]. **REPORTED**
+Where sodium wins today: cold-climate performance, grid storage where volumetric density is irrelevant, and as a lithium-price hedge. Changan is fielding a commercial sodium-ion EV on CATL cells [4]. **REPORTED**
 
 ### Solid-state: 2026 is the pilot-line year, not the product year
 
@@ -93,9 +93,7 @@ Commercial modules are far behind: **Oxford PV's 26.9% module efficiency** (60-c
 
 **Fact two: volumes are falling for the first time ever.** BNEF projects **~649 GW in 2026 vs ~655 GW in 2025** — the first annual contraction in records back to 2000. IEA's more conservative series shows ~540 GW in 2026 vs ~585 GW in 2025. China is the entire cause: down ~14% to ~341 GW (~52% of global), while non-China installs grow to ~308 GW with India and Africa accelerating [6][7]. Module prices have stabilized and modestly recovered after two years of below-cost selling, driven by silver costs and coordinated Chinese self-regulation [6]. **REPORTED**
 
-**SPECULATION:** this is a demand-shape correction inside China's tariff reform (post-Document 136 market pricing), not a technology or cost failure — and it is probably healthy. A modest price recovery is what lets Chinese manufacturers fund the tandem transition, which is capital-intensive and currently unprofitable. A perpetual price war would have starved perovskite commercialization.
-
-The number to watch in 2027 is not efficiency records; it's **certified outdoor degradation data on tandem modules over 24+ months**. Perovskite's entire commercial risk is durability, and no lab record addresses it.
+**SPECULATION:** this is a demand-shape correction inside China's tariff reform (post-Document 136 market pricing), not a technology or cost failure — and it is probably healthy. Modest price recovery is what lets Chinese manufacturers fund the capital-intensive, currently unprofitable tandem transition; a perpetual price war would have starved perovskite commercialization. The number to watch in 2027 is not efficiency records but **certified outdoor degradation data on tandem modules over 24+ months**. Durability is perovskite's entire commercial risk, and no lab record addresses it.
 
 ---
 
@@ -199,26 +197,26 @@ The cause is not technology but the absence of **bankable offtake** — the most
 
 ## What people are underestimating
 
-**1. Stationary storage at $70/kWh is a bigger deal than any battery chemistry announcement. [SPECULATION, high confidence]**
-A 45% single-year pack price drop that makes grid storage cheaper than EV batteries inverts a decade of assumptions. Grid storage was supposed to be the *hand-me-down* market for EV cell overcapacity. It's now the price leader — which means it will start pulling cell design toward its own requirements (cycle life, thermal management, C-rate) rather than accepting automotive castoffs.
+**1. Stationary storage at $70/kWh outweighs any chemistry announcement. [SPECULATION, high confidence]**
+A 45% single-year drop making grid storage cheaper than EV packs inverts a decade of assumptions. Grid storage was supposed to be the hand-me-down market for EV cell overcapacity; it is now the price leader, which means it will start pulling cell *design* toward its own requirements (cycle life, C-rate, thermal) rather than accepting automotive castoffs.
 
 **2. Fervo, not fusion, is the 2026 firm-power story. [SPECULATION]**
-A 100 MW EGS plant delivering power this quarter with a credible $3,000/kW roadmap and a 396 MW Google PPA is a *this-decade* firm clean resource. It receives perhaps 5% of the attention fusion gets. The learning-curve argument is strong precisely because the technique is borrowed from shale, an industry that has already proven it can drop drilling costs 10× through repetition.
+A 100 MW EGS plant delivering power this quarter, with a credible $3,000/kW roadmap and a 396 MW Google PPA, is a *this-decade* firm clean resource — and gets perhaps 5% of fusion's attention. The learning-curve case is strong precisely because the technique is borrowed from shale, which already proved it can cut drilling costs 10× through repetition.
 
 **3. Solar's first-ever volume decline will be misread as decline. [SPECULATION]**
 It is a Chinese policy transition (Document 136 market pricing) landing in one calendar year, plus a deliberate price-floor effort. Non-China installs still grow. Extrapolating a solar plateau from 2026 will look badly wrong by 2028.
 
-**4. The interconnection queue is the real technology frontier, and it's institutional. [SPECULATION]**
-14 GW withdrawn for every 1 GW built is not a physics problem, a materials problem, or a cost problem. Grid-enhancing technologies can add capacity in months at a fraction of new-build cost — and PJM only fully implemented ambient-adjusted ratings in March 2026, with MISO and NYISO not expected until 2028. The gap between "technically available" and "procedurally permitted" is where most of the achievable 2027-2030 gigawatts are sitting.
+**4. The interconnection queue is the real frontier, and it is institutional. [SPECULATION]**
+14 GW withdrawn per 1 GW built is not a physics, materials, or cost problem. GETs add capacity in months at a fraction of new-build cost — yet PJM only fully implemented ambient-adjusted ratings in March 2026, with MISO and NYISO not expected until 2028. The gap between "technically available" and "procedurally permitted" holds most of the achievable 2027-2030 gigawatts.
 
 **5. Sodium-ion's importance is optionality, not cost. [SPECULATION]**
 Even if $19/kWh is marketing, sodium at rough parity by 2027-2028 permanently caps lithium's pricing power — removing the tail risk that made every long-range battery cost forecast hedge upward.
 
 **6. China's EAST results should be reframing fusion geopolitics. [SPECULATION]**
-1,066 seconds of steady-state H-mode plus operation beyond the Greenwald density limit are not startup press releases; they are confinement physics results from a state program with a successor device (BEST) in build. Western fusion discourse is organized around private-company milestones and a 2039 ITER D-T date. Neither frame accommodates a Chinese state program moving faster than both.
+1,066 seconds of steady-state H-mode plus operation beyond the Greenwald density limit are confinement-physics results from a state program with a successor device (BEST) in build — not startup press releases. Western discourse is organized around private milestones and a 2039 ITER D-T date; neither frame accommodates a Chinese state program moving faster than both.
 
-**7. Solid-state batteries are losing the race they were supposed to win. [SPECULATION]**
-Every major program is at pilot line in 2026 with production in 2027-2028 — while BYD is delivering 400 km in 5 minutes on liquid-electrolyte cells today, and LFP packs sit at $81/kWh. Solid-state's remaining moat is energy density for aviation and premium long-range. That is a real market. It is not the market it was promised.
+**7. Solid-state is losing the race it was supposed to win. [SPECULATION]**
+Every major program sits at pilot line in 2026 with production in 2027-2028, while BYD delivers 400 km in 5 minutes on liquid-electrolyte cells today and LFP packs sit at $81/kWh. Solid-state's remaining moat is energy density for aviation and premium long-range — a real market, but not the one it was promised.
 
 **8. Restarts beat SMRs to the meter, and the follow-on is unplanned. [SPECULATION]**
 Crane Clean Energy Center lands H2 2027 versus SMRs at 2030+. But recently-shuttered reactors are a finite pipeline. The 2028-2030 window — restarts exhausted, SMRs not yet arrived — is an under-planned gap.

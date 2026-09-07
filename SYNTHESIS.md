@@ -215,6 +215,19 @@ simply wrong: several of the most-cited forecasters pushed their dates out
 through 2025 before pulling them back in during early 2026, with aggregates
 sitting near 2031.
 
+**Energy technology.** The 2026 frontier here is manufacturing, not
+invention. Almost nothing on the list is a new physical principle and nearly
+all of it is a factory. Grid storage is now the fastest-scaling energy
+technology in history and, in an inversion of the usual assumption, batteries
+for the grid are now cheaper per kilowatt-hour than batteries for cars. Solid
+state slipped a product cycle while conventional chemistry shipped four
+hundred kilometers of range in a five-minute charge. Solar had its first-ever
+volume decline, which is a policy transition rather than a technology
+failure. The most underrated firm-power story is not fusion but enhanced
+geothermal, which has the strongest cost-decline argument in clean firm power
+because it inherits the shale drilling learning curve. Fusion schedules
+slipped again while its capital did not.
+
 **Exotic computing.** If quantum is not the answer, the natural follow-up is
 whether some other post-Moore paradigm is. Mostly no, and the reason is
 instructive. A real 8-bit multiply-accumulate costs ten million to a hundred

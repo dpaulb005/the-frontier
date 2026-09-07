@@ -215,6 +215,19 @@ simply wrong: several of the most-cited forecasters pushed their dates out
 through 2025 before pulling them back in during early 2026, with aggregates
 sitting near 2031.
 
+**Energy technology.** The 2026 frontier here is manufacturing, not
+invention. Almost nothing on the list is a new physical principle and nearly
+all of it is a factory. Grid storage is now the fastest-scaling energy
+technology in history and, in an inversion of the usual assumption, batteries
+for the grid are now cheaper per kilowatt-hour than batteries for cars. Solid
+state slipped a product cycle while conventional chemistry shipped four
+hundred kilometers of range in a five-minute charge. Solar had its first-ever
+volume decline, which is a policy transition rather than a technology
+failure. The most underrated firm-power story is not fusion but enhanced
+geothermal, which has the strongest cost-decline argument in clean firm power
+because it inherits the shale drilling learning curve. Fusion schedules
+slipped again while its capital did not.
+
 **Exotic computing.** If quantum is not the answer, the natural follow-up is
 whether some other post-Moore paradigm is. Mostly no, and the reason is
 instructive. A real 8-bit multiply-accumulate costs ten million to a hundred
@@ -3285,16 +3298,16 @@ The correct forecast is therefore not "a decade in a year" but **a barbell**: in
 
 ## TL;DR
 
-1. The defining shift of 2026 is that the frontier moved from *invention* to *manufacturing*. Sodium-ion left the lab at GWh scale, perovskite tandems entered pilot production, enhanced geothermal is about to sell its first commercial electron, and the first US advanced-reactor construction permit in 40+ years was issued. Almost nothing on this list is a new physical principle; nearly all of it is a factory.
+1. The frontier moved from *invention* to *manufacturing*. Sodium-ion left the lab at GWh scale, perovskite tandems entered pilot production, enhanced geothermal is about to sell its first commercial electron, and the first US advanced-reactor construction permit in 40+ years was issued. Almost nothing here is a new physical principle; nearly all of it is a factory.
 2. **Grid storage is scaling faster than any energy technology in history.** BNEF forecasts ~158 GW / 459 GWh of global deployments in 2026, up ~41% from a record ~112 GW in 2025. LFP is ~90% of it. **CONFIRMED (forecast is REPORTED)** [1][2]
-3. **Batteries got cheap enough to be boring.** Global lithium-ion pack prices fell 8% to a record **$108/kWh** in 2025 — and stationary-storage packs fell 45% in a single year to **$70/kWh**, now the cheapest segment. China average: $84/kWh. **CONFIRMED** [3]
+3. **Batteries got cheap enough to be boring.** Global lithium-ion pack prices fell 8% to a record **$108/kWh** in 2025; stationary-storage packs fell **45% in one year to $70/kWh**, now the cheapest segment. **CONFIRMED** [3]
 4. **Sodium-ion crossed the threshold.** CATL's Naxtra entered GWh-scale production in 2026, reportedly at ~$19/kWh at the cell level vs ~$55-60/kWh for LFP, alongside a 60 GWh supply agreement with HyperStrong. **REPORTED** [4][5]
-5. **Solar had its first down year on record.** BNEF projects ~649 GW in 2026 vs ~655 GW in 2025 — the first contraction in data going back to 2000 — driven entirely by China cooling ~14%. Non-China solar keeps growing to ~308 GW. **REPORTED** [6][7]
+5. **Solar had its first down year on record.** BNEF projects ~649 GW in 2026 vs ~655 GW in 2025 — the first contraction since records began in 2000 — driven entirely by China cooling ~14%. Non-China installs grow to ~308 GW. **REPORTED** [6][7]
 6. **Perovskite tandems hit 35.5% certified cell efficiency** (LONGi, July 2026), while shipping modules land at 26-28%. The lab-to-module gap, not the record, is the story. **CONFIRMED** [8][9]
-7. **Fusion slipped — but the hardware and the money are real.** CFS's SPARC first plasma moved to 2027 (~75% construction complete); Helion's Polaris reached 150 million °C. Private fusion funding now exceeds **$13B**. Nobody is within 12 months of grid electricity. **REPORTED** [10][11][12]
+7. **Fusion slipped; the hardware and money did not.** SPARC first plasma moved to 2027 (~75% built); Helion's Polaris reached 150 million °C; private funding exceeds **$13B**. Nobody is within 12 months of grid electricity. **REPORTED** [10][11][12]
 8. **Enhanced geothermal goes commercial this quarter.** Fervo's Cape Station Phase I (100 MW) is expected to deliver power in late 2026, at ~$7,000/kW falling toward a targeted $3,000/kW, backed by a 396 MW Google PPA. **REPORTED** [13][14]
-9. **Transmission is the binding constraint and everyone now agrees.** ~2,600 GW sits in US interconnection queues; ~14 GW withdraw for every 1 GW built; PJM capacity prices went from $28.92/MW-day to $329.17/MW-day across two delivery years. **REPORTED** [15][16]
-10. **Hydrogen's correction is essentially complete.** 33+ GW of projects cancelled, 60-70% wiped from hydrogen equities, Air Products' $3.1B charge, CF Industries' $51M impairment. What survives is industrial feedstock, not an energy carrier. **CONFIRMED (aggregate figures REPORTED)** [17][18]
+9. **Transmission is the binding constraint.** ~2,600 GW sits in US interconnection queues; ~14 GW withdraw per 1 GW built; PJM capacity prices went from $28.92 to $329.17/MW-day across two delivery years. **REPORTED** [15][16]
+10. **Hydrogen's correction is complete.** 33+ GW cancelled, 60-70% wiped from hydrogen equities, Air Products' $3.1B charge, CF Industries' $51M impairment. What survives is industrial feedstock, not an energy carrier. **REPORTED** [17][18]
 
 ---
 
@@ -3314,9 +3327,9 @@ That happened *despite* rising lithium and cobalt prices — overcapacity and co
 
 CATL's chief scientist Wu Kai stated the company resolved core manufacturing challenges, with large-scale sodium-ion production from Q4 2026 [4]. The Naxtra product line reached GWh-scale, paired with a reported **60 GWh supply agreement with HyperStrong** — the largest sodium-ion deal recorded. Specs: **up to 175 Wh/kg**, passing China's latest national EV traction-battery safety standard [4][5]. **REPORTED**
 
-Cost claims deserve care. Widely circulated figures put Naxtra cells at **~$19/kWh vs ~$55-60/kWh for LFP cells** [5]. **SPECULATION** — that gap is implausibly large for a chemistry with lower energy density and a less mature supply chain; it likely reflects a marginal/strategic price or a favorable accounting boundary, not sustainable full cost. The more sober industry read comes from HiNa Battery's general manager Li Shujun, who forecasts sodium reaching **cost parity with lithium in 2027-2028** [19] — i.e. sodium is not yet cheaper on a like-for-like basis. **REPORTED**
+Cost claims deserve care. Circulated figures put Naxtra cells at **~$19/kWh vs ~$55-60/kWh for LFP cells** [5]. **SPECULATION** — that gap is implausibly large for a lower-density chemistry with a less mature supply chain, and likely reflects a strategic price or favorable accounting boundary rather than sustainable full cost. The sober read is HiNa GM Li Shujun's forecast of **cost parity with lithium in 2027-2028** [19] — i.e. sodium is not yet cheaper like-for-like. **REPORTED**
 
-Where sodium actually wins in 2026: cold-climate performance, grid storage where volumetric density is irrelevant, and as a lithium-price hedge. Changan is fielding a commercial sodium-ion EV using CATL cells [4]. **REPORTED**
+Where sodium wins today: cold-climate performance, grid storage where volumetric density is irrelevant, and as a lithium-price hedge. Changan is fielding a commercial sodium-ion EV on CATL cells [4]. **REPORTED**
 
 ### Solid-state: 2026 is the pilot-line year, not the product year
 
@@ -3370,9 +3383,7 @@ Commercial modules are far behind: **Oxford PV's 26.9% module efficiency** (60-c
 
 **Fact two: volumes are falling for the first time ever.** BNEF projects **~649 GW in 2026 vs ~655 GW in 2025** — the first annual contraction in records back to 2000. IEA's more conservative series shows ~540 GW in 2026 vs ~585 GW in 2025. China is the entire cause: down ~14% to ~341 GW (~52% of global), while non-China installs grow to ~308 GW with India and Africa accelerating [6][7]. Module prices have stabilized and modestly recovered after two years of below-cost selling, driven by silver costs and coordinated Chinese self-regulation [6]. **REPORTED**
 
-**SPECULATION:** this is a demand-shape correction inside China's tariff reform (post-Document 136 market pricing), not a technology or cost failure — and it is probably healthy. A modest price recovery is what lets Chinese manufacturers fund the tandem transition, which is capital-intensive and currently unprofitable. A perpetual price war would have starved perovskite commercialization.
-
-The number to watch in 2027 is not efficiency records; it's **certified outdoor degradation data on tandem modules over 24+ months**. Perovskite's entire commercial risk is durability, and no lab record addresses it.
+**SPECULATION:** this is a demand-shape correction inside China's tariff reform (post-Document 136 market pricing), not a technology or cost failure — and it is probably healthy. Modest price recovery is what lets Chinese manufacturers fund the capital-intensive, currently unprofitable tandem transition; a perpetual price war would have starved perovskite commercialization. The number to watch in 2027 is not efficiency records but **certified outdoor degradation data on tandem modules over 24+ months**. Durability is perovskite's entire commercial risk, and no lab record addresses it.
 
 ---
 
@@ -3476,26 +3487,26 @@ The cause is not technology but the absence of **bankable offtake** — the most
 
 ## What people are underestimating
 
-**1. Stationary storage at $70/kWh is a bigger deal than any battery chemistry announcement. [SPECULATION, high confidence]**
-A 45% single-year pack price drop that makes grid storage cheaper than EV batteries inverts a decade of assumptions. Grid storage was supposed to be the *hand-me-down* market for EV cell overcapacity. It's now the price leader — which means it will start pulling cell design toward its own requirements (cycle life, thermal management, C-rate) rather than accepting automotive castoffs.
+**1. Stationary storage at $70/kWh outweighs any chemistry announcement. [SPECULATION, high confidence]**
+A 45% single-year drop making grid storage cheaper than EV packs inverts a decade of assumptions. Grid storage was supposed to be the hand-me-down market for EV cell overcapacity; it is now the price leader, which means it will start pulling cell *design* toward its own requirements (cycle life, C-rate, thermal) rather than accepting automotive castoffs.
 
 **2. Fervo, not fusion, is the 2026 firm-power story. [SPECULATION]**
-A 100 MW EGS plant delivering power this quarter with a credible $3,000/kW roadmap and a 396 MW Google PPA is a *this-decade* firm clean resource. It receives perhaps 5% of the attention fusion gets. The learning-curve argument is strong precisely because the technique is borrowed from shale, an industry that has already proven it can drop drilling costs 10× through repetition.
+A 100 MW EGS plant delivering power this quarter, with a credible $3,000/kW roadmap and a 396 MW Google PPA, is a *this-decade* firm clean resource — and gets perhaps 5% of fusion's attention. The learning-curve case is strong precisely because the technique is borrowed from shale, which already proved it can cut drilling costs 10× through repetition.
 
 **3. Solar's first-ever volume decline will be misread as decline. [SPECULATION]**
 It is a Chinese policy transition (Document 136 market pricing) landing in one calendar year, plus a deliberate price-floor effort. Non-China installs still grow. Extrapolating a solar plateau from 2026 will look badly wrong by 2028.
 
-**4. The interconnection queue is the real technology frontier, and it's institutional. [SPECULATION]**
-14 GW withdrawn for every 1 GW built is not a physics problem, a materials problem, or a cost problem. Grid-enhancing technologies can add capacity in months at a fraction of new-build cost — and PJM only fully implemented ambient-adjusted ratings in March 2026, with MISO and NYISO not expected until 2028. The gap between "technically available" and "procedurally permitted" is where most of the achievable 2027-2030 gigawatts are sitting.
+**4. The interconnection queue is the real frontier, and it is institutional. [SPECULATION]**
+14 GW withdrawn per 1 GW built is not a physics, materials, or cost problem. GETs add capacity in months at a fraction of new-build cost — yet PJM only fully implemented ambient-adjusted ratings in March 2026, with MISO and NYISO not expected until 2028. The gap between "technically available" and "procedurally permitted" holds most of the achievable 2027-2030 gigawatts.
 
 **5. Sodium-ion's importance is optionality, not cost. [SPECULATION]**
 Even if $19/kWh is marketing, sodium at rough parity by 2027-2028 permanently caps lithium's pricing power — removing the tail risk that made every long-range battery cost forecast hedge upward.
 
 **6. China's EAST results should be reframing fusion geopolitics. [SPECULATION]**
-1,066 seconds of steady-state H-mode plus operation beyond the Greenwald density limit are not startup press releases; they are confinement physics results from a state program with a successor device (BEST) in build. Western fusion discourse is organized around private-company milestones and a 2039 ITER D-T date. Neither frame accommodates a Chinese state program moving faster than both.
+1,066 seconds of steady-state H-mode plus operation beyond the Greenwald density limit are confinement-physics results from a state program with a successor device (BEST) in build — not startup press releases. Western discourse is organized around private milestones and a 2039 ITER D-T date; neither frame accommodates a Chinese state program moving faster than both.
 
-**7. Solid-state batteries are losing the race they were supposed to win. [SPECULATION]**
-Every major program is at pilot line in 2026 with production in 2027-2028 — while BYD is delivering 400 km in 5 minutes on liquid-electrolyte cells today, and LFP packs sit at $81/kWh. Solid-state's remaining moat is energy density for aviation and premium long-range. That is a real market. It is not the market it was promised.
+**7. Solid-state is losing the race it was supposed to win. [SPECULATION]**
+Every major program sits at pilot line in 2026 with production in 2027-2028, while BYD delivers 400 km in 5 minutes on liquid-electrolyte cells today and LFP packs sit at $81/kWh. Solid-state's remaining moat is energy density for aviation and premium long-range — a real market, but not the one it was promised.
 
 **8. Restarts beat SMRs to the meter, and the follow-on is unplanned. [SPECULATION]**
 Crane Clean Energy Center lands H2 2027 versus SMRs at 2030+. But recently-shuttered reactors are a finite pipeline. The 2028-2030 window — restarts exhausted, SMRs not yet arrived — is an under-planned gap.
@@ -3631,14 +3642,14 @@ Crane Clean Energy Center lands H2 2027 versus SMRs at 2030+. But recently-shutt
 
 1. **Starship flew V3 twice and still has not refueled in orbit.** Flight 13 (24 July 2026) was the second V3 flight; ship-to-ship propellant transfer is the gating item for everything lunar and Martian, now targeted for late 2026 [REPORTED]. [1][6]
 2. **NASA restructured Artemis, on the record.** Artemis II flew crewed around the Moon over ~10 days in April 2026 [CONFIRMED]; NASA's own mission page now describes **Artemis III (2027) as a low-Earth-orbit demonstration** of the SpaceX and Blue Origin landers, with the **first crewed landing on Artemis IV in 2028** [CONFIRMED]. The "return to the Moon" moved by redefinition rather than by a slip announcement. [7][8]
-3. **Direct-to-device is no longer a demo.** Starlink Direct-to-Cell has 650+ operational satellites and a reported ~16M unique users through carrier partners; AST SpaceMobile has FCC approval for its full constellation and is stacking Block 2 BlueBirds on Falcon 9 [REPORTED]. D2D moved from "novelty SMS" to a line item in carrier P&Ls. [2][3]
+3. **Direct-to-device stopped being a demo.** Starlink D2C runs 650+ operational satellites with a reported ~16M unique carrier-partner users; AST SpaceMobile is FCC-authorized for up to 248 satellites and flying Block 2 BlueBirds on Falcon 9 [REPORTED/CONFIRMED]. [2][3]
 4. **Amazon Leo (ex-Kuiper) is real, behind, and got a regulatory reprieve.** 396 production satellites launched as of July 2026 against a 3,236-satellite design; the FCC **waived** the "half the constellation by July 2026" milestone in June 2026 but will temporarily demote the spectral priority of satellites launched after it [CONFIRMED]. Enterprise beta is live; early consumer service is anticipated during 2026. [4]
 5. **China is the volume story.** Guowang and Qianfan together are consuming an estimated 70+ launches in 2026, with a combined few hundred satellites on orbit against ITU deadlines — deployment rate, not technology, is the binding constraint [REPORTED]. [5]
-6. **Orbital datacenters went from meme to funded.** Starcloud raised $170M at a $1.1B valuation and filed for an 88,000-satellite, ~20 GW compute constellation; Google's Project Suncatcher targets prototype TPU satellites in early 2027 [REPORTED]. Physics is plausible; the economics still rest entirely on Starship-class launch costs. [9][10]
+6. **Orbital datacenters went from meme to funded.** Starcloud raised $170M at ~$1.1B and filed for an 88,000-satellite, ~20 GW compute constellation; Google's Project Suncatcher targets prototype TPU satellites in early 2027 [REPORTED]. Physics is plausible; economics rest entirely on Starship-class launch cost. [9][10]
 7. **6G now has hard dates.** 3GPP approved the Release 21 timeline in June 2026: first functional freeze March 2027, 80% checkpoint March 2028, second functional freeze June 2028, stage-3 freeze December 2028, **full code freeze March 2029** — meaning the first 6G specifications land in early 2029 [CONFIRMED]. Commercial 6G is a 2030 story, not a 2028 one. [11][12]
 8. **OpenAI's hardware slipped a year.** The Jony Ive-designed, screen-free, pocket device won't ship before end of February 2027, and it will not be called "io" after the iyO trademark suit [REPORTED]. [13]
-9. **Smart glasses are the real consumer AI form factor of 2026** — Meta shipped Ray-Ban Display at $799 with a neural wristband and is reportedly running four more models in 2026; Apple's non-display N50 glasses are now a late-2027 story [REPORTED]. [14][15]
-10. **The memory squeeze is the biggest under-covered consumer-tech story.** Gartner's estimate of a ~130% combined DRAM+SSD price surge through 2026 translates to roughly +17% PC and +13% smartphone prices [REPORTED]. AI capex is now directly taxing consumer hardware. [16]
+9. **Smart glasses are the consumer AI form factor that actually shipped.** Meta has Ray-Ban Display ($799, neural wristband), Oakley Meta, and from June 2026 its own $299 Meta Glasses; Apple's non-display N50 glasses are now a late-2027 story [CONFIRMED/REPORTED]. [14][15][17]
+10. **The memory squeeze is the biggest under-covered consumer-tech story.** A reported ~130% combined DRAM+SSD price surge through 2026 translates to roughly +17% PC and +13% smartphone prices [REPORTED]. AI datacenter capex is now directly taxing consumer hardware. [16]
 
 ---
 
@@ -3670,7 +3681,7 @@ Secondary trackers circulate wildly inconsistent Leo counts (210, 241, 365); 396
 
 ### A4. Chinese megaconstellations
 
-Guowang (SatNet, state-backed) and Qianfan/Thousand Sails (Shanghai-backed, export-oriented) are together the reason China's launch rate is climbing steeply: an estimated 45 launches consumed in 2025 and 70+ projected for 2026 [REPORTED]. [5] On-orbit counts remain modest relative to plans — figures around 177 Guowang (late July 2026) and ~200 Qianfan (June 2026) [REPORTED] — against combined ambitions above 29,000 satellites and hard ITU milestone deadlines. [5]
+Guowang (state-backed) and Qianfan/Thousand Sails (Shanghai-backed, export-oriented) are why China's launch rate is climbing steeply: an estimated 45 launches consumed in 2025 and 70+ projected for 2026, batches going up every two to three weeks across four launch sites [REPORTED]. [5] On-orbit counts remain modest against plans — roughly 177 Guowang (late July 2026) and ~200 Qianfan (June 2026) versus combined ambitions above 29,000 satellites and hard ITU milestones. [5]
 
 **[SPECULATION]** China's constraint has flipped from "can we build satellites cheaply" (CGTN claims a >96% Qianfan cost reduction [REPORTED]) to "can we launch them fast enough." Until a reusable Chinese booster is flying at cadence, the ITU deadlines will be met by paperwork and partial deployments rather than full constellations.
 
@@ -3678,9 +3689,9 @@ Guowang (SatNet, state-backed) and Qianfan/Thousand Sails (Shanghai-backed, expo
 
 The most vertiginous change since 2025 is that "put the datacenter in orbit" acquired real balance sheets.
 
-- **Starcloud** (formerly Lumen Orbit) flew Starcloud-1 with an NVIDIA H100 in November 2025, raised a $170M Series A at ~$1.1B in March 2026, and filed with the FCC in February 2026 for an 88,000-satellite, roughly 20 GW constellation; Starcloud-2 with a Blackwell-class cluster is slated for late 2026 [REPORTED]. [9]
-- **Google Project Suncatcher** proposes tightly-flown formations of TPU-carrying solar satellites linked optically, with prototype launches targeted for early 2027 [REPORTED]. [10]
-- **Axiom Space** launched its first orbital datacenter nodes in January 2026, riding Kepler's optical relay network [REPORTED]. [9]
+- **Starcloud** (formerly Lumen Orbit) flew Starcloud-1 with an NVIDIA H100 in November 2025, raised a $170M Series A at ~$1.1B in March 2026, and filed with the FCC in February 2026 for an 88,000-satellite, ~20 GW constellation; Starcloud-2, with a Blackwell-class cluster, is slated for late 2026 [REPORTED]. NVIDIA is supplying radiation-tolerant inference hardware and frameworks [REPORTED]. [9][10]
+- **Google Project Suncatcher** (announced November 2025) proposes tight formations of TPU-carrying solar satellites linked by free-space optical laser, prototypes targeted early 2027 [REPORTED]. [10]
+- **Axiom Space** launched its first orbital datacenter nodes in January 2026 on Kepler's optical relay network [REPORTED]. [9]
 
 The pitch: continuous carbon-free solar at multiples of terrestrial yield in the right orbit, no land/water/grid-interconnect queue. The documented objections are consistent across sources [CONFIRMED]: thermal rejection in vacuum is hard (radiators, not chillers, under strict mass-to-area constraints); radiation hardening of TPUs/GPUs needs shielding plus error correction; launch cost for power-dense payloads; optical ground links degrade with cloud, fog and aerosols; and debris/deorbit compliance in crowded LEO. [10]
 
@@ -3717,9 +3728,9 @@ Falcon 9 list price sits near $70M for ~17-18 t to LEO (~$3,000-4,000/kg), rides
 
 ### B2. AI-native RAN and Open RAN
 
-The industry's actual 2026 activity is not 6G; it's stuffing accelerators into the RAN. AI-RAN (NVIDIA's ARC/Aerial platform with SoftBank, Nokia, and others) proposes running RAN L1 and AI inference on the same GPU infrastructure, monetizing idle cell-site compute as edge inference capacity [REPORTED]. Open RAN, meanwhile, has settled into a less revolutionary reality: significant deployments (AT&T/Ericsson, Vodafone, Rakuten) but consolidation around a few vendors rather than the open marketplace originally promised [REPORTED].
+The industry's actual 2026 activity is not 6G; it is stuffing accelerators into the RAN. AI-RAN (NVIDIA's ARC/Aerial with SoftBank, Nokia and others) runs RAN L1 and AI inference on shared GPU infrastructure, monetizing idle cell-site compute [REPORTED]. Open RAN has settled into a less revolutionary reality: real deployments (AT&T/Ericsson, Vodafone, Rakuten) but consolidation around a few vendors rather than the open marketplace promised [REPORTED].
 
-**[SPECULATION]** "AI-RAN" is currently more compelling as a *cost story* (one box, two workloads) than a *revenue story* (edge inference marketplaces). The revenue thesis requires latency-sensitive inference demand that mostly does not exist yet at the cell site — most inference is happy in a regional datacenter 20ms away, or on the device.
+**[SPECULATION]** AI-RAN is a *cost* story (one box, two workloads) masquerading as a *revenue* story (edge inference marketplaces). The revenue thesis needs latency-sensitive inference demand that does not yet exist at the cell site — most inference is content in a regional datacenter 20 ms away, or on the device itself.
 
 ### B3. Direct-to-device and NTN
 
@@ -3739,7 +3750,7 @@ Sub-THz (100-300 GHz) research continues at Nokia Bell Labs, NTT Docomo, Samsung
 
 Status: **delayed to 2027** [REPORTED]. OpenAI has indicated its first hardware won't ship before the end of February 2027, versus an original end-of-2026 goal. [13] It will not carry the "io" name after the iyO trademark litigation. Reported design: pocket-sized, screen-free, always-listening, context-aware, in a $200-$300 range, built around an ambient-assistant interaction model.
 
-**[SPECULATION]** The delay reads as a hard-problems delay, not a manufacturing one. A screen-free ambient device has three unsolved requirements: (a) latency low enough that speech feels conversational, which pushes toward on-device models; (b) battery life measured in days with always-on sensing; (c) a social contract for a microphone in a room, which is a *policy* and *design* problem, not a silicon one. Meta solved (c) partially by putting it on your face where people can see it. A pocket puck has no such affordance. I'd put roughly even odds on another slip past 2027.
+**[SPECULATION]** This reads as a hard-problems delay, not a manufacturing one. A screen-free ambient device needs three unsolved things: conversational latency (pushing toward on-device models), multi-day battery with always-on sensing, and a social contract for a live microphone in a shared room — a design and policy problem, not a silicon one. Meta partly solved the third by putting the device on your face where others can see it; a pocket puck has no such affordance. Roughly even odds on another slip past 2027.
 
 ### C2. Smart glasses became the fight
 
@@ -3749,7 +3760,7 @@ Status: **delayed to 2027** [REPORTED]. OpenAI has indicated its first hardware 
 
 **Google/Samsung** shipped **Galaxy XR** (formerly Project Moohan) on 21 October 2025 at $1,799, the first Android XR device, with European and Canadian market expansion during 2026 [CONFIRMED]. [18] Google's glasses partnerships (Warby Parker, Gentle Monster, Kering) target 2026-2027 products.
 
-**[SPECULATION]** The 2026 lesson is that *display-free, camera-and-audio glasses with a good assistant* is the volume product, and heads-up display glasses are the enthusiast tier. Apple arriving in 2027 with a display-free product validates Meta's read of the market — but arriving two years after Meta, into a category where Meta owns the eyewear-brand relationships (EssilorLuxottica), is a genuinely weak position for Apple by its own standards.
+**[SPECULATION]** The 2026 lesson: *display-free camera-and-audio glasses with a good assistant* is the volume product; heads-up display glasses are the enthusiast tier. Apple arriving in 2027 with a display-free design validates Meta's read of the market — but arriving two years late into a category where Meta owns the eyewear-brand relationships is a weak position by Apple's own standards.
 
 ### C3. On-device models and the NPU race
 
@@ -3761,9 +3772,7 @@ Silicon, 2026 vintage [REPORTED, benchmark-derived]:
 
 **[SPECULATION]** TOPS is now close to meaningless as a comparison metric, and Apple's refusal to play the number game is the tell. For local LLM inference, the binding constraint is **memory bandwidth and capacity**, not multiply-accumulate throughput. A 614 GB/s, 128 GB machine runs models an 80-TOPS, 32 GB machine simply cannot load. Expect marketing to pivot from TOPS to "tokens/sec at Q4" during 2027.
 
-On models: Gemini Nano ships across Pixel and increasingly third-party Android via ML Kit GenAI APIs; Apple's Foundation Models framework exposes its ~3B on-device model to third-party developers [CONFIRMED]; and the open small-model tier (Qwen, Gemma, Llama, Phi, SmolLM lineages) has made 3-8B class models genuinely useful at 4-bit on a phone [CONFIRMED].
-
-Siri's rebuild — App Intents-driven, capable of taking actions in apps, and reportedly leaning on Google Gemini for some server-side reasoning — is the 2026 Apple story, targeted at spring 2026 and still being refined [REPORTED]. [17]
+On models: Gemini Nano ships across Pixel and increasingly third-party Android via ML Kit GenAI APIs; Apple's Foundation Models framework exposes its ~3B on-device model to third-party developers [CONFIRMED]; and the open small-model tier (Qwen, Gemma, Llama, Phi, SmolLM) has made 3-8B models genuinely useful at 4-bit on a phone [CONFIRMED]. Siri's rebuild — App Intents-driven, able to take actions in apps, and reportedly leaning on Google Gemini for some server-side reasoning — was targeted at spring 2026 and is still being refined, with the glasses timeline explicitly gated on it [REPORTED]. [17]
 
 ### C4. The memory shock
 
@@ -3782,11 +3791,11 @@ This is the story that touches every device in this section. AI datacenter deman
 
 **[ANALYSIS — all items are my judgment, not reporting]**
 
-1. **Orbital refueling is the whole ballgame, and it's a cadence problem, not a docking problem.** The public conversation treats the first successful transfer as the milestone. It isn't. The milestone is the tenth transfer inside a 60-day window. Boiloff, pad turnaround, and tanker production rate are the real constraints, and none of them are demonstrated.
+1. **Orbital refueling is a cadence problem, not a docking problem.** The public conversation treats the first successful transfer as the milestone. It isn't — the milestone is the tenth transfer inside a boiloff-limited window. Pad turnaround and tanker production rate are the real constraints, and neither is demonstrated.
 
 2. **Space compute will arrive through Earth observation, not AI training.** Everyone models orbital datacenters as "cheaper GPU-hours." The near-term winner is reducing petabytes of SAR and hyperspectral data to kilobytes before downlink, where the alternative isn't a terrestrial datacenter — it's not getting the data at all. That's a real business today at small scale.
 
-3. **The memory shock is the most consequential consumer-tech event of 2026 and is being covered as a PC-enthusiast story.** A ~13-17% across-the-board price increase in phones and PCs, sustained for two years, is a larger effect on consumer technology than any AI feature shipped this year. It will suppress upgrade cycles, shrink base configurations, and directly constrain on-device AI ambitions.
+3. **The memory shock is the most consequential consumer-tech event of 2026 and is being covered as a PC-enthusiast story.** A 13-17% across-the-board price rise in phones and PCs sustained for two years outweighs any AI feature shipped this year. It suppresses upgrade cycles, shrinks base configurations, and directly constrains on-device AI.
 
 4. **6G's real content is non-terrestrial and sensing, not speed.** The bandwidth story is exhausted; nobody needs 1 Tbps to a handset. The reason to care about Rel-21 is that satellite access and radar-like environmental sensing become native network functions. That reshapes who the network operators' competitors are — SpaceX becomes a peer, not a partner.
 
@@ -3808,37 +3817,28 @@ This is the story that touches every device in this section. AI datacenter deman
 
 | Item | Value | Date | Label |
 |---|---|---|---|
-| Starship integrated test flights | 13 | 24 Jul 2026 | REPORTED [1] |
-| Starship orbital propellant transfers completed | 0 | Sep 2026 | REPORTED [6] |
+| Starship integrated test flights / orbital propellant transfers | 13 / **0** | Sep 2026 | REPORTED [1][6] |
 | Starlink satellites on orbit / operational | 10,413 / 10,397 | Jun 2026 | CONFIRMED [2] |
 | Starlink subscribers | >12M (10.3M in Mar 2026) | Jun 2026 | CONFIRMED [2] |
 | Starlink 2025 revenue / operating income | $11.4B / $4.4B | 2025 | CONFIRMED [2] |
 | Starlink D2C satellites operational | 650+ | Apr 2026 | REPORTED [2] |
-| Starlink Mobile unique users (via carriers) | ~16M | Mar 2026 | REPORTED [2] |
 | Amazon Leo production satellites launched | 396 | Jul 2026 | CONFIRMED [4] |
-| Amazon Leo full constellation | 3,236 sats, 3 shells, 98 planes | design | CONFIRMED [4] |
 | Amazon Leo FCC half-constellation milestone | waived Jun 2026; spectral priority demoted | Jun 2026 | CONFIRMED [4] |
 | AST SpaceMobile FCC authorization | up to 248 satellites | 21 Apr 2026 | CONFIRMED [3] |
-| AST SpaceMobile carrier agreements | ~60 MNOs | 2026 | REPORTED [3] |
 | Guowang satellites on orbit | ~177 | late Jul 2026 | REPORTED [5] |
 | Qianfan satellites on orbit | ~200 | Jun 2026 | REPORTED [5] |
-| Chinese megaconstellation launches | 45 (2025) → 70+ (2026 proj.) | 2026 | REPORTED [5] |
 | Starcloud Series A / valuation | $170M / $1.1B | Mar 2026 | REPORTED [9] |
 | Starcloud FCC filing | 88,000 sats / ~20 GW | Feb 2026 | REPORTED [9] |
-| Artemis II crewed lunar flyby | 1-10 Apr 2026 | 2026 | CONFIRMED [7] |
 | Artemis III | LEO lander demo, 2027 | restructured 2026 | CONFIRMED [7] |
 | Artemis crewed landing | Artemis IV, 2028 | restructured 2026 | CONFIRMED [7] |
 | Tanker flights per Starship HLS lunar mission | ~10 | 2026 | REPORTED [6] |
-| 3GPP Rel-21 first functional freeze | Mar 2027 | approved Jun 2026 | CONFIRMED [11] |
 | 3GPP Rel-21 full code freeze | Mar 2029 | approved Jun 2026 | CONFIRMED [11] |
 | First 6G specifications available | early 2029 | approved Jun 2026 | CONFIRMED [11] |
 | OpenAI device ship date | not before end Feb 2027 | Feb 2026 | REPORTED [13] |
 | Meta Ray-Ban Display price | $799 | Sep 2025 | CONFIRMED [14] |
 | Meta own-brand "Meta Glasses" price | $299 | 23 Jun 2026 | CONFIRMED [15] |
-| Ray-Ban Meta cumulative units | >2M | early 2026 | REPORTED [15] |
 | Apple N50 glasses target | ~late 2027 | Feb 2026 | REPORTED [17] |
-| Snapdragon X2 Elite Extreme NPU | 80 TOPS | 2026 | REPORTED [19] |
-| Panther Lake NPU / platform | ~50 / ~180 TOPS | 2026 | REPORTED [19] |
+| NPU: Snapdragon X2 Elite Extreme / Panther Lake | 80 / ~50 TOPS (~180 platform) | 2026 | REPORTED [19] |
 | Apple M5 Max memory bandwidth | up to 614 GB/s | 2026 | REPORTED [19] |
 | DRAM + SSD price surge to end-2026 | ~130% combined | 2026 | REPORTED [16] |
 | Resulting PC / smartphone price rise | +17% / +13% | 2026 | REPORTED [16] |
@@ -3848,24 +3848,24 @@ This is the story that touches every device in this section. AI datacenter deman
 ## Sources
 
 1. Space.com — SpaceX stacks Starship V3, completes fueling test — https://www.space.com/space-exploration/launches-spacecraft/spacex-stacks-starship-v3-rocket-completes-major-fueling-test-ahead-of-debut-launch (2026)
-2. Wikipedia — Starlink (satellite counts, subscribers, 2025 revenue/operating income) — https://en.wikipedia.org/wiki/Starlink (accessed Sep 2026); Starlink — Direct to Cell service brief — https://starlink.com/public-files/DIRECT_TO_CELL_SERVICE_FEB_25.pdf ; KeepTrack — Starlink Direct to Cell status — https://keeptrack.space/deep-dive/starlink-direct-to-cell (2026)
-3. SpaceNews — FCC clears AST SpaceMobile constellation as launch setback clouds ramp-up (up to 248 satellites authorized, 21 Apr 2026) — https://spacenews.com/fcc-clears-ast-spacemobile-constellation-as-launch-setback-clouds-ramp-up/ (2026); Spaceflight Now — SpaceX launches 3 Block 2 BlueBirds for AST SpaceMobile — https://spaceflightnow.com/2026/06/16/live-coverage-spacex-to-launch-3-block-2-bluebird-satellites-for-ast-spacemobile/ (16 Jun 2026)
-4. Wikipedia — Amazon Leo (396 production satellites Jul 2026, FCC milestone waiver Jun 2026, 3,236-satellite design, Herotel deal) — https://en.wikipedia.org/wiki/Amazon_Leo (accessed Sep 2026); Fierce Network — Amazon Leo previews satellite broadband for enterprises — https://www.fierce-network.com/broadband/amazon-leo-previews-its-satellite-broadband-enterprises (2026)
+2. Wikipedia — Starlink (sat counts, subscribers, 2025 revenue/op income) — https://en.wikipedia.org/wiki/Starlink (accessed Sep 2026); Starlink Direct to Cell brief — https://starlink.com/public-files/DIRECT_TO_CELL_SERVICE_FEB_25.pdf; KeepTrack — D2C status — https://keeptrack.space/deep-dive/starlink-direct-to-cell (2026)
+3. SpaceNews — FCC clears AST SpaceMobile constellation (248 sats, 21 Apr 2026) — https://spacenews.com/fcc-clears-ast-spacemobile-constellation-as-launch-setback-clouds-ramp-up/ (2026); Spaceflight Now — Block 2 BlueBird launch — https://spaceflightnow.com/2026/06/16/live-coverage-spacex-to-launch-3-block-2-bluebird-satellites-for-ast-spacemobile/ (16 Jun 2026)
+4. Wikipedia — Amazon Leo (396 sats Jul 2026, FCC waiver Jun 2026, 3,236-sat design) — https://en.wikipedia.org/wiki/Amazon_Leo (accessed Sep 2026); Fierce Network — Amazon Leo enterprise beta — https://www.fierce-network.com/broadband/amazon-leo-previews-its-satellite-broadband-enterprises (2026)
 5. KeepTrack — China launch cadence and constellations 2026 — https://keeptrack.space/deep-dive/china-launch-cadence-2025-2026 (2026); China in Space — mega-constellations — https://www.china-in-space.com/p/chinas-mega-constellations-mega-article (2026)
-6. Wikipedia — Starship Propellant Transfer Demonstration (NET late 2026; ~10 tanker launches per HLS mission; NASA program manager on repeated demos) — https://en.wikipedia.org/wiki/Starship_Propellant_Transfer_Demonstration (accessed Sep 2026)
-7. NASA — Moon to Mars / Artemis program status page (Artemis II April 2026 result; Artemis III 2027 LEO lander demo; Artemis IV 2028 crewed landing) — https://www.nasa.gov/humans-in-space/artemis/ (accessed Sep 2026)
+6. Wikipedia — Starship Propellant Transfer Demonstration (NET late 2026; ~10 tanker launches per HLS mission) — https://en.wikipedia.org/wiki/Starship_Propellant_Transfer_Demonstration (accessed Sep 2026)
+7. NASA — Moon to Mars / Artemis (Artemis II Apr 2026; Artemis III 2027 LEO lander demo; Artemis IV 2028 landing) — https://www.nasa.gov/humans-in-space/artemis/ (accessed Sep 2026)
 8. CSIS — What Comes Next for Artemis? — https://www.csis.org/analysis/what-comes-next-artemis (2026); NASA — adds mission to Artemis lunar program, updates architecture — https://www.nasa.gov/news-release/nasa-adds-mission-to-artemis-lunar-program-updates-architecture (2026)
 9. Fierce Network — Space data centers: Starcloud, SpaceX and Project Suncatcher explained — https://www.fierce-network.com/cloud/space-data-centers-starcloud-spacex-and-project-suncatcher-explained (2026)
 10. Data Center Frontier — Google and NVIDIA test space data centers — https://www.datacenterfrontier.com/site-selection/article/55328204/when-the-cloud-leaves-earth-google-and-nvidia-test-space-data-centers-for-the-orbital-ai-era (2026)
-11. IEEE ComSoc Technology Blog — 3GPP approves timelines for Release 21 (freeze dates Mar 2027 / Mar 2028 / Jun 2028 / Dec 2028 / Mar 2029; WRC-27 and LA 2028 as checkpoints) — https://techblog.comsoc.org/2026/06/16/3gpp-approves-timelines-for-release-21-which-will-specify-6g-ran-and-5g-advanced/ (16 Jun 2026)
+11. IEEE ComSoc — 3GPP approves Release 21 timelines (freezes Mar 2027 / Mar 2028 / Jun 2028 / Dec 2028 / Mar 2029) — https://techblog.comsoc.org/2026/06/16/3gpp-approves-timelines-for-release-21-which-will-specify-6g-ran-and-5g-advanced/ (16 Jun 2026)
 12. 3GPP — Rel-20 planning and progress in TSG SA — https://www.3gpp.org/news-events/3gpp-news/sa-rel20 ; ITU-R IMT-2030 timeline discussion — https://techblog.comsoc.org/2025/07/22/itu-r-wp5d-imt-2030-submission-evaluation-guidelines-vs-6g-specs-in-3gpp-release-20-21/
 13. MacRumors — OpenAI's Jony Ive-designed device delayed to 2027 — https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/ (10 Feb 2026); 9to5Mac — won't be called io — https://9to5mac.com/2026/02/10/jony-ives-ai-hardware-is-delayed-to-2027-and-wont-be-called-io/ (10 Feb 2026)
 14. Meta — Meta Ray-Ban Display AI glasses (Connect 2025) — https://www.meta.com/blog/meta-ray-ban-display-ai-glasses-connect-2025/ (Sep 2025)
-15. Wikipedia — Ray-Ban Meta (model lineup, $299 Meta Glasses June 2026, Orion pivot) — https://en.wikipedia.org/wiki/Ray-Ban_Meta (accessed Sep 2026)
-16. Tom's Hardware — Memory price surge begins to cool — https://www.tomshardware.com/pc-components/ram/memory-price-surge-begins-to-cool-as-consumers-hit-affordability-limit-ai-demand-still-keeps-dram-and-nand-prices-climbing-through-q3-2026 (2026)
+15. Wikipedia — Ray-Ban Meta ($299 Meta Glasses Jun 2026, Orion pivot) — https://en.wikipedia.org/wiki/Ray-Ban_Meta (accessed Sep 2026)
+16. Tom's Hardware — Memory price surge begins to cool — https://www.tomshardware.com/pc-components/ram/memory-price-surge-begins-to-cool-as-consumers-hit-affordability-limit-ai-demand-still-keeps-dram-and-nand-prices-climbing-through-q3-2026 (2026); NAND Research — Memory & Flash Crisis update — https://nand-research.com/memory-flash-crisisc-update-march-2026/ (Mar 2026)
 17. AppleInsider — Apple eyes 2027 for AI smart glasses built around context — https://appleinsider.com/articles/26/02/17/apple-eyes-2027-for-ai-smart-glasses-built-around-context-not-screens (17 Feb 2026)
 18. Android Central — Samsung Galaxy XR — https://www.androidcentral.com/gaming/virtual-reality/samsung-galaxy-xr (2026)
-19. Windows Central — Snapdragon X2 Elite Extreme vs Intel Panther Lake lab report — https://www.windowscentral.com/hardware/qualcomm/snapdragon-x2-elite-extreme-intel-amd-tests-signal65 (2026); Tom's Guide — Apple M5 vs Panther Lake vs Snapdragon X2 — https://www.tomsguide.com/computing/apple-m5-vs-intel-vs-amd-vs-snapdragon-x2-which-chip-wins (2026)
+19. Windows Central — Snapdragon X2 Elite Extreme vs Panther Lake (Signal65 lab report) — https://www.windowscentral.com/hardware/qualcomm/snapdragon-x2-elite-extreme-intel-amd-tests-signal65 (2026); Tom's Guide — Apple M5 vs Panther Lake vs Snapdragon X2 — https://www.tomsguide.com/computing/apple-m5-vs-intel-vs-amd-vs-snapdragon-x2-which-chip-wins (2026)
 
 
 ---
