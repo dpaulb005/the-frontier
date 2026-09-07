@@ -2805,7 +2805,7 @@ Multiply-accumulate performed physically in a memory array — by charge, resist
 
 **IBM** has the deepest research bench: the HERMES phase-change-memory analog chip has shown near-software accuracy on real workloads, and an earlier PCM prototype held 17M parameters across 35M PCM cells [27]. **NorthPole** — 25× more power-efficient than 12 nm GPUs — remains a research chip with no announced commercial release [27].
 
-**Mythic** raised $125M in late 2025 (**REPORTED**) after years of struggle. **Sagence** claims Llama 2-70B at one-tenth the power of an H100 system, one-twentieth the cost and space (**REPORTED**, unverified) [26]. **Rain AI** has pivoted repeatedly and has not shipped a datacenter part.
+**Sagence** claims Llama 2-70B at one-tenth the power of an H100 system, one-twentieth the cost and space (**REPORTED**, unverified) [26]. **TetraMem** is the RRAM entry: **CONFIRMED** tape-out, manufacture and initial silicon validation of MLX200, a 22 nm multi-level-RRAM analog IMC SoC on TSMC, with evaluation sampling expected in H2 2026 — the first credible move of memristive analog compute from 65 nm research silicon to a manufacturable node [64]. **Rain AI** has pivoted repeatedly and has not shipped a datacenter part.
 
 **Memristors/RRAM**: 2026 *Nature Electronics* work on "fault-free analogue computing with imperfect hardware" [35] and 5-bit-controllable oxide RRAM crossbars represent genuine progress on the precision problem, but commercialization "faces substantial hurdles, necessitating a paradigm shift from traditional transistor dominance." **Spintronics**: a *Nature Electronics* paper (October 2025) demonstrated a lossless, fully parallel STT-MRAM digital compute-in-memory macro [36], and CRAM-ER at GLSVLSI 2026 extended spintronic CRAM to multi-bit DNN workloads. MRAM's advantage — non-volatility and near-zero leakage — makes it a strong weight-storage candidate; note that the strongest recent result is *digital* CIM in MRAM, not analog, which is telling.
 
@@ -2833,9 +2833,9 @@ The structural problem: spiking networks excel at sparse, event-driven, temporal
 
 ## 6. Superconducting and cryogenic logic
 
-Single-flux-quantum (SFQ) logic encodes bits as magnetic flux quanta, switches with Josephson junctions, and can clock above 100 GHz with extraordinarily low switching energy [43]. NIST and university groups have demonstrated SFQ qubit control chips in multi-chip modules, and IEEE work continues on large-scale cryogenic integration.
+Single-flux-quantum (SFQ) logic encodes bits as magnetic flux quanta, switches with Josephson junctions, and operates above 50–100 GHz with extraordinarily low switching energy [43]. **CONFIRMED** 2026 activity is real but pointed elsewhere: IBM demonstrated large-scale cryo-CMOS control for superconducting qubits [65], and a 4 K superconducting ML accelerator for qubit *state discrimination* exists [66]. Both are quantum-control applications.
 
-The blockers are unchanged and severe: cryogenic overhead at 4 K costs roughly 10²–10³ W of room-temperature power per watt removed; superconducting memory density is dismal, so you either keep DRAM warm (and pay enormous I/O energy across the thermal boundary) or you have almost no memory; and there is no fab ecosystem at anything like CMOS scale. Searches for 2026 SFQ-for-AI-datacenter programs return no credible industrial roadmap.
+The blockers are unchanged: cryogenic overhead at 4 K costs roughly 10²–10³ W at room temperature per watt removed; superconducting memory density is dismal, so you either keep DRAM warm and pay enormous I/O energy across the thermal boundary or you have almost no memory; area density has historically defeated prototypes; and there is no fab ecosystem near CMOS scale. There is no credible industrial roadmap for SFQ AI accelerators in 2026.
 
 **Verdict for 2030:** No. Its future is as classical control logic *for quantum computers*, not as an AI substrate.
 
@@ -2845,9 +2845,9 @@ The blockers are unchanged and severe: cryogenic overhead at 4 K costs roughly 1
 
 **REPORTED**: Atlas Data Storage, spun out of Twist Bioscience in 2025, targets terabyte-scale DNA storage in 2026 with a stated ambition of 13 TB in a single drop of water [34]. Twist's long-term roadmap — a 150 nm synthesis chip — projects ~$100/TB.
 
-**Honest skepticism**: current pricing is around **$100,000 per megabyte**, i.e. ~10¹¹ $/TB, against a survey threshold where 78% of enterprise storage buyers would adopt (below $1,000/TB). That is eight orders of magnitude of cost reduction required. Read/write latency is hours-to-days. And the density claims deserve arithmetic: at tape-comparable volumetric assumptions a 0.05 cm³ drop holds gigabytes, not terabytes — the 13 TB figure assumes near-theoretical molecular packing.
+**Honest skepticism**: current pricing is around **$100,000 per megabyte** (~10¹¹ $/TB) against a ~$1,000/TB enterprise adoption threshold — eight orders of magnitude of cost reduction required — with hours-to-days read/write latency, and density claims that assume near-theoretical molecular packing.
 
-**Verdict for 2030:** Not an AI-compute technology at all. A plausible cold-archive niche for regulatory/genomic data late in the decade, at best.
+**Verdict for 2030:** Not an AI-compute technology at all. A plausible cold-archive niche at best.
 
 ---
 
@@ -2855,9 +2855,9 @@ The blockers are unchanged and severe: cryogenic overhead at 4 K costs roughly 1
 
 **CONFIRMED**: On 6 August 2026, Cortical Labs, NUS Medicine, and datacenter operator DayOne switched on a prototype rack of 20 CL1 units in Singapore — the first "biological datacenter" [32]. Each CL1 holds ~800,000 lab-grown human neurons on a multielectrode array with 59 input channels, draws ~25 W (800–1,000 W per rack), and keeps neurons alive up to six months via onboard life support [33]. A ~120-unit Melbourne facility is planned (**REPORTED**). Switzerland's **FinalSpark** runs a remote platform of 16 brain organoids and claims ~10⁶× lower energy than digital chips (**REPORTED**, and effectively unfalsifiable given no comparable workload).
 
-**Honest skepticism**: 59 electrodes is the entire I/O bandwidth to 800,000 neurons — roughly the interface of a 1970s minicomputer. Neurons die in six months. There is no programming model, no training algorithm competitive with SGD, no reproducibility across biological samples, and no benchmark on any task a GPU is used for. This is a superb neuroscience instrument and a genuinely novel research platform. It is not computing infrastructure.
+**Honest skepticism**: 59 electrodes is the entire I/O bandwidth to 800,000 neurons. Neurons die in six months. There is no programming model, no training algorithm competitive with SGD, no reproducibility across biological samples, and no benchmark on any task a GPU is used for. Superb neuroscience instrument; not computing infrastructure.
 
-**Verdict for 2030:** No AI-datacenter role. Watch it as neuroscience, and for what it teaches about learning rules.
+**Verdict for 2030:** No AI-datacenter role.
 
 ---
 
@@ -2905,11 +2905,35 @@ Analyses of CMOS energy-efficiency limits [42] suggest conventional digital has 
 
 **ANALYSIS — The ADC/DAC tax is the analog killer, and it is not going away by itself.** Every analog scheme — optical, memristive, capacitive, thermodynamic — must eventually return digital numbers. Converter energy scales super-linearly with resolution and roughly linearly with sample rate, and it does not benefit from the physics that makes the analog core efficient. EnCharge's capacitor approach and the 2026 electro-optic analog memory work [14] are attacking this correctly by keeping more of the pipeline analog and reducing conversion frequency. **Underestimated:** judge any analog claim by asking where the converters are and how often they fire. Claims that omit converter energy are not comparable to GPU numbers.
 
-**ANALYSIS — Neuromorphic and biological computing are being evaluated against the wrong benchmark, in both directions.** Critics dismiss them for losing to GPUs on transformer inference, which was never the claim. Boosters cite brain energy efficiency, which is not achievable through 59 electrodes. The correct frame for neuromorphic is microwatt always-on sensing, where Innatera and SynSense are winning real sockets [30][31]; the correct frame for Cortical Labs is neuroscience instrumentation. **Underestimated:** both fields would be better served by dropping the datacenter framing entirely.
-
-**ANALYSIS — Reversible computing's milestone is more important than its numbers.** A 1.41× recovery factor on a shift register is unimpressive as a product and significant as physics: it is the first *net* energy recovery in a commercial CMOS process [22][23]. Every prior demonstration lost more in the resonator than it saved. That threshold crossing is what makes the research program legitimate. **Underestimated:** the frequency-energy tradeoff means this technology's natural home is where clock speed does not matter — which is a real and growing category (always-on, battery, space) but not AI.
+**ANALYSIS — Neuromorphic and biological computing are judged against the wrong benchmark in both directions.** Critics dismiss them for losing to GPUs on transformer inference, which was never the claim; boosters cite brain energy efficiency, unachievable through 59 electrodes. The correct frame for neuromorphic is microwatt always-on sensing (Innatera, SynSense [30][31]) and simulation instruments for national labs (SpiNNcloud [56][57]); the correct frame for Cortical Labs is neuroscience instrumentation. **Underestimated:** both fields would be better served by dropping the datacenter framing entirely. Reversible computing is the mirror image — a 1.41× recovery factor is unimpressive as a product but significant as physics, since every prior attempt lost more in the resonator than it saved [22][23].
 
 **ANALYSIS — The most likely 2030 outcome is unexciting and worth saying plainly.** AI datacenters in 2030 will be GPUs and GPU-like ASICs, with optical interconnect between and within racks, HBM with increasing amounts of compute inside it, and wafer-scale systems occupying a meaningful latency-sensitive niche. Analog, thermodynamic, reversible, neuromorphic, and biological compute will collectively be a rounding error in deployed FLOPs. That is not a reason to ignore them — the option value is asymmetric and the physics arguments are sound — but a forecast that has several of them mainstream by 2030 is not supported by anything demonstrated as of September 2026.
+
+---
+
+## Ranked verdict: what is actually inside AI datacenters by 2030
+
+Ranked by my probability that the paradigm is a *material line item* in AI datacenter spend by 2030 — not a pilot, not a press release.
+
+| # | Paradigm | P(material by 2030) | Timeline | Why |
+|---|---|---|---|---|
+| 1 | **Optical interconnect / co-packaged optics** | ~95% | **Already arriving** | Copper reach is the binding constraint; Marvell/Celestial ~$3.25B, Ayar $3.75B val., NVLink Fusion [8][10] |
+| 2 | **Wafer-scale (Cerebras)** | ~90% | **Already deployed** | 600 MW live-or-contracted; $20B+/750 MW OpenAI deal; $209.9M Q2-26 core revenue [47][48] |
+| 3 | **Processing-in-memory (HBM-resident)** | ~80% | 2027–2030 | Rides the HBM supply chain; Samsung GAIA, zHBM; SK hynix AiMX [38][60][61] |
+| 4 | **Analog in-memory — edge/client** | ~75% | Shipping now | EnCharge EN100 >40 TOPS/W; Mythic $125M; TetraMem 22 nm [24][53][64] |
+| 5 | **CGRA / reconfigurable dataflow** | ~50% | Persists as niche | SambaNova SN50; absorbed into AI-specific coarse-grained silicon [40] |
+| 6 | **Analog in-memory — datacenter inference** | ~30% | 2028+ | ADC tax scales with array size; no frontier-model demonstration |
+| 7 | **Photonic NPU (fixed-weight co-processor)** | ~25% | 2028+ | Q.ANT at LRZ/JSC and IONOS is real but small; no optical nonlinearity [11][12] |
+| 8 | **Thermodynamic / probabilistic (TSU)** | ~15% | 2029+, high variance | Z1 is a genuine watt-class die, but 97% of Z1T's per-token energy is the FPGA [52] |
+| 9 | **Spintronics / MRAM** | ~15% | As weight memory, not compute | Strongest result is *digital* CIM in MRAM [36] |
+| 10 | **Neuromorphic** | ~10% | Sensor edge yes, DC no | BrainChip does ~$1–2M/yr revenue; SpiNNcloud sells to labs [57][58] |
+| 11 | **Analog optical compute (general)** | ~5% | 2035+ | Microsoft AOC needs 50–1,000 modules for useful sizes [1] |
+| 12 | **Reversible / adiabatic** | ~3% | 2035+ / never for AI | Energy savings bought with clock speed; wrong tradeoff for accelerators |
+| 13 | **Superconducting SFQ** | ~2% | Never (for AI) | Cryo overhead + no memory; future is quantum control [43][65] |
+| 14 | **DNA storage** | ~1% | Archive niche only | ~10⁸× cost gap; not compute at all [34] |
+| 15 | **Biological / organoid** | <1% | Never (as infrastructure) | 59 electrodes, six-month neuron lifespan [32][33] |
+
+The honest shape of this table: **ranks 1–4 are packaging, memory and light — engineering, not new physics.** Ranks 8–15 are the exciting ones, and they are the ones with no megawatts.
 
 ---
 
