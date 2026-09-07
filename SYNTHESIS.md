@@ -273,7 +273,10 @@ physics. Data movement is what binds. That single fact sorts the field:
 optical interconnect is winning now because moving bits cheaply is the actual
 problem, optical compute remains a laboratory demonstration, and the honest
 published projection for it is a factor-of-hundred efficiency claim that has
-not been measured on built hardware. Thermodynamic and reversible computing
+not been measured on built hardware. The sharpest evidence is a company
+action rather than a paper: the best-funded optical computing startup has
+removed its optical inference server from its product listing and gone
+interconnect-first. It stopped selling optical compute. Thermodynamic and reversible computing
 have genuine silicon and no product. Analog in-memory ships at the edge, not
 the rack. The most likely 2030 datacenter is graphics processors plus optical
 interconnect plus compute stacked into memory, with a wafer-scale latency
