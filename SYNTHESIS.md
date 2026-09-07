@@ -110,9 +110,46 @@ and wireless signal machine learning: many papers, no winner, no shared
 corpus, and the best-funded startup in the space has raised roughly fourteen
 million dollars in total. That is a thin field by any standard.
 
-The common shape of the opportunity in both: do not compete with the
-established solver or the established instrument. Build the loop around it,
-where the moat is workflow and data rather than a kernel.
+**The crossover is the actual answer.** Signal processing has consolidated
+where the money already went: speech, codecs, and medical image
+reconstruction are taken. Radio frequency and wireless is the least
+consolidated area in either field. But signal processing is where the good
+business model lives, because it is software, usage-priced, and needs no
+fabrication plant. So the shape of the opportunity is a signal-processing
+business model aimed at a radio-frequency market.
+
+Four specifics support that, and they are unusually concrete for a survey
+like this one:
+
+- **Radio frequency has no corpus.** The standard public dataset is a decade
+  old, synthetic, non-commercial, has known errata, and its own publisher
+  says it does not use it in products. Meanwhile a wave of wireless
+  foundation-model papers appeared in the last month with no open weights and
+  no open data. An over-the-air dataset is a two-person, six-month,
+  low-five-figure project that would own the benchmark everyone else has to
+  cite.
+- **The open electromagnetic solvers cannot use a GPU.** Published work shows
+  order-of-magnitude speedups from GPU implementations, but that work was
+  built by and for photonics. Antenna, package, and circuit-board engineers
+  have the same Maxwell equations and none of the tooling.
+- **AI-designed radio frequency hardware is now measured, not simulated.**
+  Fabricated power amplifiers with machine-designed combining networks are
+  hitting better than seventy-four percent peak efficiency, which retires the
+  objection that this only works on paper.
+- **The incumbents are handing over the interface.** The major test and design
+  vendors now emit editable Python at every step, and at least one tool
+  shipped a machine-readable interface for external agents last month.
+
+Two traps worth avoiding, both flagged with evidence in the brief. Reconfigurable
+intelligent surfaces have a large literature and, in the ten most recent
+papers, zero hardware prototypes or commercial deployments. And
+radio-frequency jamming for counter-drone work is being obsoleted by
+fiber-guided and inertially guided drones that are immune to it, so build
+sensing and cueing rather than jamming.
+
+The common shape in both fields: do not compete with the established solver
+or the established instrument. Build the loop around it, where the moat is
+workflow and data rather than a kernel.
 
 ---
 
