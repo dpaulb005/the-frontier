@@ -243,6 +243,19 @@ interconnect plus compute stacked into memory, with a wafer-scale latency
 niche and everything else a rounding error. The boring options are the ones
 arriving.
 
+**Space and consumer devices.** The under-covered story here is a price
+shock. Memory prices roughly doubled for dynamic RAM and more than tripled
+for flash across the current cycle, driven by AI demand, feeding through to
+an expected seventeen percent rise in personal computer prices and thirteen
+percent in smartphones, with no relief before late 2027. That squeezes
+on-device AI at precisely the moment models need memory headroom, and it is a
+direct transmission channel from datacenter buildout to consumer hardware.
+Elsewhere: orbital datacenters went from meme to funded, on economics that
+rest entirely on launch costs that do not yet exist. Commercial sixth
+generation wireless now has hard specification dates and is a 2030 story, not
+a 2028 one. And the most-watched consumer AI device slipped to 2027, while
+smart glasses quietly became the form factor that actually shipped.
+
 **Semiconductors.** Two-nanometer-class production is real and there is
 three-way leading-edge competition for the first time in about a decade.
 Backside power delivery is the next genuine inflection and it slipped a year.
